@@ -81,10 +81,9 @@
                 <li><a href="<%=jsxx%>">教师信息管理</a></li>
             </ul>
         </li>
-        <li class="submenu open"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
+        <li class="submenu  open"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="<%=xmsb%>">项目申报</a></li>
-                <li  class="active"><a href="<%=xmsp%>">项目审批</a></li>
+                <li class="active"><a href="<%=xmsp%>">项目审批</a></li>
                 <li><a href="<%=xmys%>">项目验收</a></li>
             </ul>
         </li>
@@ -96,8 +95,8 @@
 <!--main-container-part-->
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="#" class="current">部门管理</a></div>
-        <h1>部门管理</h1>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">项目管理</a> <a href="#" class="current">项目审批</a></div>
+        <h1>项目审批</h1>
     </div>
     <div class="container-fluid">
         <hr>
@@ -105,7 +104,7 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>查看部门信息</h5>
+                        <h5>查看项目信息</h5>
                     </div>
 
                     <div class="widget-content nopadding">
@@ -113,9 +112,9 @@
                             <table class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
-                                    <th width="30%">部门名称</th>
-                                    <th width="30%">部门人数</th>
-                                    <th width="30%">部门等级</th>
+                                    <th width="30%">项目名称</th>
+                                    <th width="30%">项目管理者</th>
+                                    <th width="30%">项目状态</th>
                                     <th width="10%">操作</th>
                                 </tr>
                                 </thead>
@@ -125,6 +124,7 @@
                             <table class="table table-bordered table-striped">
                                 <colgroup><col style="width: 80px;" /><col /></colgroup>
                                 <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
+                                    <em class="icon-"
                                         <%
                                 try{
                                     List Project_list = Factory.getProjectInstance().showProject();
@@ -134,10 +134,10 @@
                                         out.print("<tr><td  style='text-align: center'  width='30%'>"+ newProject.getName()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'>"+ newProject.getCharger_name()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'>"+ newProject.getStatus()+"</td>");
-                                        out.print("<td  width='5%'><a class='tip' href='editLession.jsp?id="+newProject.getId()+"' title='编辑'>" +
-                                                "<i class='icon-pencil'></i>编辑</a></td>" +
-                                                "<td  width='5%'><a class='tip' href='../delete?action=Lession&id="+newProject.getId()+"' title='删除'>" +
-                                                "<i class='icon-remove'></i>删除</a></td></tr>");
+                                        out.print("<td  width='5%'><a class='tip' href='editLession.jsp?id="+newProject.getId()+"' title='通过'>" +
+                                                "<em class='icon-ok'></em>通过</a></td>" +
+                                                "<td  width='5%'><a class='tip' href='../delete?action=Lession&id="+newProject.getId()+"' title='不通过'>" +
+                                                "<em class='icon-remove'></em>不通过</a></td></tr>");
 
                                     }
                                 }catch (Exception e){

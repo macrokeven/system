@@ -57,4 +57,28 @@ public class DepartmentImpl implements DepartmentApi {
         }
         return flag;
     }
+
+    @Override
+    public List showDetailDepartment(String id) {
+        List<Department> list = null;
+        try{
+            String sql = "select * from teacher where id = ?;";//对表的操作语句
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,id);
+            ResultSet rs = pstm.executeQuery();
+            list = new ArrayList<Department>();
+            while(rs.next()){
+                Department newDepartment = new Department();
+                newDepartment.setId(rs.getString("id"));
+                newDepartment.setName(rs.getString("name"));
+                newDepartment.setPeople_number(rs.getString("people_number"));
+                newDepartment.setLevel(rs.getString("level"));
+                list.add(newDepartment);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return list;
+    }
+
 }

@@ -34,4 +34,9 @@ public class DepartmentProxy implements DepartmentApi{
         }
         return flag;
     }
+
+    @Override
+    public List showDetailDepartment(String id) {
+        return null;
+    }
 }

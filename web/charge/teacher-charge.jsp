@@ -13,7 +13,7 @@
 <%@ page import="com.letoy.action.Factory" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="com.letoy.module.Project" %>
-<%@ page import="com.letoy.module.Teacher" %>
+<%@ page import="com.letoy.module.User" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,7 +113,6 @@
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="<%=xmsb%>">项目申报</a></li>
                 <li><a href="<%=xmsp%>">项目审批</a></li>
                 <li><a href="<%=xmys%>">项目验收</a></li>
             </ul>
@@ -123,8 +122,6 @@
     </ul>
 </div>
 
-
-<!--close-left-menu-stats-sidebar-->
 
 <div id="content">
     <div id="content-header">
@@ -161,19 +158,19 @@
                                 <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
                                         <%
                                 try{
-                                    List Teacher_list = Factory.getTeacherInstance().showTeacher();
-                                    Iterator iter = Teacher_list.iterator();
+                                    List User_list = Factory.getUserInstance().showUser("teacher");
+                                    Iterator iter = User_list.iterator();
                                     while(iter.hasNext()){
-                                        Teacher newTeacher = (Teacher) iter.next();
-                                        String id =newTeacher.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='18%'><div id='name"+id+"'>"+ newTeacher.getName()+"</div></td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='department"+id+"'>"+ newTeacher.getDepartment()+"</td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='sex"+id+"'>"+ newTeacher.getSex()+"</td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='information"+id+"'>"+ newTeacher.getInformation()+"</td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='level"+id+"'>"+ newTeacher.getLevel()+"</td>");
+                                        User newUser = (User) iter.next();
+                                        String id =newUser.getId();
+                                        out.print("<tr><td  style='text-align: center'  width='18%'><div id='name"+id+"'>"+ newUser.getName()+"</div></td>");
+                                        out.print("<td  style='text-align: center' width='18%'><div id='department"+id+"'>"+ newUser.getDepartment()+"</td>");
+                                        out.print("<td  style='text-align: center' width='18%'><div id='sex"+id+"'>"+ newUser.getSex()+"</td>");
+                                        out.print("<td  style='text-align: center' width='18%'><div id='information"+id+"'>"+ newUser.getInformation()+"</td>");
+                                        out.print("<td  style='text-align: center' width='18%'><div id='level"+id+"'>"+ newUser.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
                                                 "<i class='icon-pencil'></i>编辑</a></div></td>" +
-                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Teacher&id="+id+"' >" +
+                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=User&id="+id+"' >" +
                                                 "<i class='icon-remove'></i>删除</a></div></td></tr>");
                                     }
                                 }catch (Exception e){

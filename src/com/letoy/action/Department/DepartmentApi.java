@@ -5,6 +5,7 @@ import com.letoy.module.Department;
 import java.util.List;
 
 public interface DepartmentApi {
-    public List showDepartment();
+    List showDepartment();
+    List showDetailDepartment(String id);
     boolean changeDepartment(Department newDepartment);
 }

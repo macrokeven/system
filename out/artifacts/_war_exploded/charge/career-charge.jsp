@@ -107,7 +107,6 @@
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="<%=xmsb%>">项目申报</a></li>
                 <li><a href="<%=xmsp%>">项目审批</a></li>
                 <li><a href="<%=xmys%>">项目验收</a></li>
             </ul>

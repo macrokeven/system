@@ -90,9 +90,6 @@
     <input type="text" placeholder="请输入搜索内容..."/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div>
-<!--close-top-serch-->
-
-<!--sidebar-menu-->
 
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> 控制台</a>
     <ul>
@@ -107,7 +104,6 @@
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="<%=xmsb%>">项目申报</a></li>
                 <li><a href="<%=xmsp%>">项目审批</a></li>
                 <li><a href="<%=xmys%>">项目验收</a></li>
             </ul>
@@ -117,8 +113,6 @@
     </ul>
 </div>
 
-
-<!--close-left-menu-stats-sidebar-->
 
 <div id="content">
     <div id="content-header">

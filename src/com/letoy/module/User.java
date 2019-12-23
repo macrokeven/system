@@ -2,27 +2,22 @@ package com.letoy.module;
 
 public class User {
     private String id;
-    private String user_id;
-    private String pwd;
-    private String idf_id;
     private String name;
-    private String login_status;
+    private String sex;
+    private String career;
+    private String information;
+    private String department;
+    private String level;
 
-    public String getPwd() {
-        return pwd;
+    public String getIdf() {
+        return idf;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setIdf(String idf) {
+        this.idf = idf;
     }
 
-    public String getIdf_id() {
-        return idf_id;
-    }
-
-    public void setIdf_id(String idf_id) {
-        this.idf_id = idf_id;
-    }
+    private String idf;
 
     public String getId() {
         return id;
@@ -30,14 +25,6 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
     }
 
     public String getName() {
@@ -48,11 +35,43 @@ public class User {
         this.name = name;
     }
 
-    public String getLogin_status() {
-        return login_status;
+    public String getSex() {
+        return sex;
     }
 
-    public void setLogin_status(String login_status) {
-        this.login_status = login_status;
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public String getCareer() {
+        return career;
+    }
+
+    public void setCareer(String career) {
+        this.career = career;
     }
 }

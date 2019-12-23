@@ -13,7 +13,9 @@
 <%@ page import="com.letoy.action.Factory" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="com.letoy.module.Department" %>
-
+<%
+    String DepartmentId = request.getParameter("id");
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -123,8 +125,8 @@
 
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="#" class="current">部门管理</a></div>
-        <h1>部门管理</h1>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="department-charge.jsp" class="tip-bottom">部门管理</a><a href="#" class="current">查看详细信息</a></div>
+        <h1>部门详细信息</h1>
     </div>
     <div class="container-fluid">
         <hr>
@@ -159,7 +161,7 @@
                                     while(iter.hasNext()){
                                         Department newDepartment = (Department) iter.next();
                                         String id =newDepartment.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='department-info.jsp?id="+id+"'>"+ newDepartment.getName()+"</a></div></td>");
+                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='department_info.jsp?id="+id+"'>"+ newDepartment.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newDepartment.getPeople_number()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newDepartment.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' href='javascript:void(0)' >" +

@@ -1,7 +1,7 @@
 package com.letoy.servlet;
 
 import com.letoy.action.Factory;
-import com.letoy.module.User;
+import com.letoy.module.LogUser;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,11 +17,11 @@ public class Login extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
-        User lgUser = new User();
+        LogUser lgUser = new LogUser();
         lgUser.setId(request.getParameter("id"));
         lgUser.setPwd(request.getParameter("pwd"));
             try {
-                lgUser = Factory.getUserInstance().Login(lgUser);
+                lgUser = Factory.getLogUserInstance().Login(lgUser);
                 if("failed".equals(lgUser.getLogin_status())){
                     out.println("<script>alert('用户名或者密码错误！');location.href='index.jsp'</script>");
                 }

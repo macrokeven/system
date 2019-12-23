@@ -104,7 +104,7 @@
         <li><a href="../main.jsp"><i class="icon icon-home"></i> <span>首页</span></a> </li>
         <li class="submenu open" > <a href="#"><i class="icon icon-th-list"></i> <span>人事管理</span> </a>
             <ul>
-                <li  class="active"><a href="<%=bmgl%>">部门管理</a></li>
+                <li   class="active"><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
                 <li><a href="<%=zcgl%>">职称管理</a></li>
                 <li><a href="<%=jsxx%>">教师信息管理</a></li>
@@ -112,7 +112,6 @@
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="<%=xmsb%>">项目申报</a></li>
                 <li><a href="<%=xmsp%>">项目审批</a></li>
                 <li><a href="<%=xmys%>">项目验收</a></li>
             </ul>
@@ -160,13 +159,13 @@
                                     while(iter.hasNext()){
                                         Department newDepartment = (Department) iter.next();
                                         String id =newDepartment.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'>"+ newDepartment.getName()+"</div></td>");
+                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='department-info.jsp?id="+id+"'>"+ newDepartment.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newDepartment.getPeople_number()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newDepartment.getLevel()+"</td>");
-                                        out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
-                                                "<i class='icon-pencil'></i>编辑</a></div></td>" +
+                                        out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' href='javascript:void(0)' >" +
+                                                "<em class='icon-pencil'></em>编辑</div></a></td>" +
                                                 "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Department&id="+id+"' >" +
-                                                "<i class='icon-remove'></i>删除</a></div></td></tr>");
+                                                "<em class='icon-remove'></em>删除</a></div></td></tr>");
                                     }
                                 }catch (Exception e){
                                     e.printStackTrace();

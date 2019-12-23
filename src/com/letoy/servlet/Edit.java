@@ -4,7 +4,7 @@ import com.letoy.action.Factory;
 import com.letoy.module.Career;
 import com.letoy.module.Department;
 import com.letoy.module.Position;
-import com.letoy.module.Teacher;
+import com.letoy.module.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -40,14 +40,14 @@ public class Edit extends HttpServlet {
                 out.println("<script>location.href='charge/career-charge.jsp'</script>");
             }
         }else if("teacher".equals(action)){
-            Teacher newTeacher = new Teacher();
-            newTeacher.setLevel(request.getParameter("level"));
-            newTeacher.setDepartment(request.getParameter("department"));
-            newTeacher.setSex(request.getParameter("sex"));
-            newTeacher.setInformation(request.getParameter("information"));
-            newTeacher.setName(request.getParameter("name"));
-            newTeacher.setId(request.getParameter("id"));
-            if(Factory.getTeacherInstance().changeTeacher(newTeacher)){
+            User newUser = new User();
+            newUser.setLevel(request.getParameter("level"));
+            newUser.setDepartment(request.getParameter("department"));
+            newUser.setSex(request.getParameter("sex"));
+            newUser.setInformation(request.getParameter("information"));
+            newUser.setName(request.getParameter("name"));
+            newUser.setId(request.getParameter("id"));
+            if(Factory.getUserInstance().changeUser(newUser)){
                 out.println("<script>location.href='charge/teacher-charge.jsp'</script>");
             }
         }else if("position".equals(action)){
