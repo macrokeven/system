@@ -22,6 +22,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%=getCss(1)%>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .table-head{padding-right:17px;background-color:#f2f2f2;color:#000;}
+        .table-body{width:100%; height:350px;overflow-y:scroll;}
+
+        .table-body table{width:100%;border-collapse: collapse;}
+        .table-body table tr:nth-child(2n+1){background-color:#f2f2f2;}
+    </style>
+    <script>
+        var status="ok";
+        function edit(a){
+            if(status==="ok"){
+                var oldname = document.getElementById("name"+a).innerText;
+                var oldpeople = document.getElementById("people"+a).innerText;
+                var oldlevel = document.getElementById("level"+a).innerText;
+                document.getElementById("name"+a).innerHTML="<input type='text' id='name' value='"+oldname+"' style='text-align: center'>";
+                document.getElementById("people"+a).innerHTML="<input type='text' id='people' value='"+oldpeople+"' style='text-align: center'>";
+                document.getElementById("level"+a).innerHTML="<input type='text' id='level' value='"+oldlevel+"' style='text-align: center'>";
+                document.getElementById("edit"+a).innerHTML="<button class='btn tip-left' onclick='submit("+a+")'>提交</button>";
+                document.getElementById("delete"+a).innerHTML="<button class='btn tip-left' onclick='refresh()'>取消</button>";
+                status = "no";
+            }
+
+        }
+        function refresh(){
+            location.href="department-charge.jsp"
+        }
+        function submit(id){
+            var name = document.getElementById("name").value;
+            var level = document.getElementById("level").value;
+            var people = document.getElementById("people").value;
+            var path = "../Edit?action=department&id="+id+"&name="+name+"&level="+level+"&people="+people;
+            location.href=path;
+        }
+    </script>
 </head>
 <body>
 
@@ -29,9 +66,7 @@
 <div id="header">
     <h1><a href="dashboard.jsp">MatAdmin</a></h1>
 </div>
-<!--close-Header-part-->
 
-<!--top-Header-menu-->
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
         <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎Admin</span><b class="caret"></b></a>
@@ -59,19 +94,15 @@
     </ul>
 </div>
 
-<!--start-top-serch-->
 <div id="search">
     <input type="text" placeholder="请输入搜索内容..."/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div>
-<!--close-top-serch-->
-
-<!--sidebar-menu-->
 
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> 控制台</a>
     <ul>
-        <li><a href="../index.jsp"><i class="icon icon-home"></i> <span>首页</span></a> </li>
-        <li class="submenu" > <a href="#"><i class="icon icon-th-list"></i> <span>管理</span> </a>
+        <li><a href="../main.jsp"><i class="icon icon-home"></i> <span>首页</span></a> </li>
+        <li class="submenu open" > <a href="#"><i class="icon icon-th-list"></i> <span>人事管理</span> </a>
             <ul>
                 <li  class="active"><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
@@ -88,52 +119,8 @@
         </li>
         <li> <a href="../lwtj.jsp"><i class="icon icon-signal"></i> <span>论文统计</span></a> </li>
         <li> <a href="../xm/xshd.jsp"><i class="icon icon-inbox"></i> <span>学术活动</span></a> </li>
-        <li><a href="../tables.jsp"><i class="icon icon-th"></i> <span>数据表格</span></a></li>
-        <li><a href="../grid.jsp"><i class="icon icon-fullscreen"></i> <span>网格布局</span></a></li>
-        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>表单</span> </a>
-            <ul>
-                <li><a href="../form-common.jsp">基本表单</a></li>
-                <li><a href="../form-validation.jsp">带验证的表单</a></li>
-                <li><a href="../form-wizard.jsp">带提示的表单</a></li>
-            </ul>
-        </li>
-        <li><a href="../buttons.jsp"><i class="icon icon-tint"></i> <span>按钮 &amp; 图标</span></a></li>
-        <li><a href="../interface.jsp"><i class="icon icon-pencil"></i> <span>组件</span></a></li>
-        <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他</span> </a>
-            <ul>
-                <li><a href="../index2.jsp">首页</a></li>
-                <li><a href="../gallery.jsp">相册</a></li>
-                <li><a href="../calendar.jsp">日历</a></li>
-                <li><a href="../invoice.jsp">清单</a></li>
-                <li><a href="../chat.jsp">聊天</a></li>
-            </ul>
-        </li>
-        <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>错误页面</span> </a>
-            <ul>
-                <li><a href="../error/error403.jsp">403错误页面</a></li>
-                <li><a href="../error/error404.jsp">404错误页面</a></li>
-                <li><a href="../error/error405.jsp">05错误页面</a></li>
-                <li><a href="../error/error500.jsp">500错误页面</a></li>
-            </ul>
-        </li>
-        <li class="content"> <span>每个月带宽</span>
-            <div class="progress progress-mini progress-danger active progress-striped">
-                <div style="width: 50%;" class="bar"></div>
-            </div>
-            <span class="percent">50%</span>
-            <div class="stat">21419.94 / 14000 MB</div>
-        </li>
-        <li class="content"> <span>Disk Space Usage</span>
-            <div class="progress progress-mini active progress-striped">
-                <div style="width: 87%;" class="bar"></div>
-            </div>
-            <span class="percent">87%</span>
-            <div class="stat">604.44 / 4000 MB</div>
-        </li>
     </ul>
 </div>
-
-<!--close-left-menu-stats-sidebar-->
 
 <div id="content">
     <div id="content-header">
@@ -143,138 +130,50 @@
     <div class="container-fluid">
         <hr>
         <div class="row-fluid">
-            <div class="span6">
+            <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
                         <h5>查看部门信息</h5>
                     </div>
 
                     <div class="widget-content nopadding">
-                        <table>
-                    <%
-                        try{
-                            List Department_list = Factory.getDepartmentInstance().showDepartment();
-                            Iterator iter = Department_list.iterator();
-                            while(iter.hasNext()){
-                                Department newDepartment = (Department) iter.next();
-                                out.print("<tr><td  style='text-align: center'>"+ newDepartment.getName()+"</td>");
-                                out.print("<td  style='text-align: center'>"+ newDepartment.getPeople_number()+"</td>");
-                                out.print("<td  style='text-align: center'>"+ newDepartment.getLevel()+"</td>");
-                                out.print("<td ><a class='tip' href='editLession.jsp?id="+newDepartment.getId()+"' title='编辑'><i class='icon-pencil'></i>编辑</a> <a class='tip' href='../delete?action=Lession&id="+"' title='删除'><i class='icon-remove'></i>删除</a></td></tr>");
-
-                            }
-                        }catch (Exception e){
-                            e.printStackTrace();
-                        }
-                    %>
-                    </table>
-                    <form action="#" method="get" class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label">First Name :</label>
-                                <div class="controls">
-                                    <input type="text" class="span11" placeholder="First name" />
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Last Name :</label>
-                                <div class="controls">
-                                    <input type="text" class="span11" placeholder="Last name" />
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Password input</label>
-                                <div class="controls">
-                                    <input type="password"  class="span11" placeholder="Enter Password"  />
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Company info :</label>
-                                <div class="controls">
-                                    <input type="text" class="span11" placeholder="Company name" />
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Description field:</label>
-                                <div class="controls">
-                                    <input type="text" class="span11" />
-                                    <span class="help-block">Description field</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Message</label>
-                                <div class="controls">
-                                    <textarea class="span11" ></textarea>
-                                </div>
-                            </div>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-success">Save</button>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-            <div class="span6">
-                <div class="widget-box">
-                    <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>编辑部门信息</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-                        <form action="#" class="form-horizontal">
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Phone field</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-phone" class="span8 mask text">
-                                    <span class="help-block blue span8">(999) 999-9999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Phone field + ext.</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-phoneExt" class="span8 mask text">
-                                    <span class="help-block blue span8">(999) 999-9999? x99999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Phone field + ext.</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-phoneInt" class="span8 mask text">
-                                    <span class="help-block blue span8">+40 999 999 999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Date field</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-date" class="span8 mask text">
-                                    <span class="help-block blue span8">99/99/9999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">SSN field</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-ssn" class="span8 mask text">
-                                    <span class="help-block blue span8">999-99-9999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">SSN field</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-ssn" class="span8 mask text">
-                                    <span class="help-block blue span8">999-99-9999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Product Key</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-productKey" class="span8 mask text">
-                                    <span class="help-block blue span8">a*-999-a999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Eye Script</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-eyeScript" class="span8 mask text">
-                                    <span class="help-block blue span8">~9.99 ~9.99 999</span> </div>
-                            </div>
-                            <div class="control-group">
-                                <label for="normal" class="control-label">Percent</label>
-                                <div class="controls">
-                                    <input type="text" id="mask-percent" class="span8 mask text">
-                                    <span class="help-block blue span8">99%</span> </div>
-                            </div>
-                        </form>
+                        <div class="table-head">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th width="30%">部门名称</th>
+                                    <th width="30%">部门人数</th>
+                                    <th width="30%">部门等级</th>
+                                    <th width="10%">操作</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table-body">
+                            <table class="table table-bordered table-striped">
+                                <colgroup><col style="width: 80px;" /><col /></colgroup>
+                                <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
+                            <%
+                                try{
+                                    List Department_list = Factory.getDepartmentInstance().showDepartment();
+                                    Iterator iter = Department_list.iterator();
+                                    while(iter.hasNext()){
+                                        Department newDepartment = (Department) iter.next();
+                                        String id =newDepartment.getId();
+                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'>"+ newDepartment.getName()+"</div></td>");
+                                        out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newDepartment.getPeople_number()+"</td>");
+                                        out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newDepartment.getLevel()+"</td>");
+                                        out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
+                                                "<i class='icon-pencil'></i>编辑</a></div></td>" +
+                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Department&id="+id+"' >" +
+                                                "<i class='icon-remove'></i>删除</a></div></td></tr>");
+                                    }
+                                }catch (Exception e){
+                                    e.printStackTrace();
+                                }
+                            %>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,7 +183,7 @@
     </div></div>
 <!--Footer-part-->
 <div class="row-fluid">
-    <div id="footer" class="span12">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+    <div id="footer" class="span12">Copyright &copy; 2019.China Letoy All rights reserved.<a target="_blank" href="http://macro.ink">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
 </div>
 <!--end-Footer-part-->
 <%=getJs(1)%>

@@ -5,6 +5,16 @@ public class Position {
     private String name;
     private String people_number;
 
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    private String level;
+
     public String getId() {
         return id;
     }

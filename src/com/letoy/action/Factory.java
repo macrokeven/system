@@ -2,9 +2,11 @@ package com.letoy.action;
 
 import com.letoy.action.Career.CareerProxy;
 import com.letoy.action.Department.DepartmentProxy;
+import com.letoy.action.Position.PositionProxy;
 import com.letoy.action.Project.ProjectProxy;
 import com.letoy.action.Teacher.TeacherProxy;
 import com.letoy.action.User.UserProxy;
+import com.letoy.module.Position;
 
 public class Factory {
     public static CareerProxy getCareerInstance(){
@@ -21,5 +23,8 @@ public class Factory {
     }
     public static UserProxy getUserInstance(){
         return new UserProxy();
+    }
+    public static PositionProxy getPositionInstance(){
+        return new PositionProxy();
     }
 }

@@ -37,4 +37,24 @@ public class DepartmentImpl implements DepartmentApi {
         }
         return list;
     }
+
+    @Override
+    public boolean changeDepartment(Department newDepartment) {
+        boolean flag = false;
+        try{
+            String sql = "update department set `name` = ?,`people_number`=?,`level`=? where `id`=?;";
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,newDepartment.getName());
+            pstm.setString(2,newDepartment.getPeople_number());
+            pstm.setString(3,newDepartment.getLevel());
+            pstm.setString(4,newDepartment.getId());
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+            con.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return flag;
+    }
 }

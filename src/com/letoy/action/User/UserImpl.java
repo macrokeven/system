@@ -17,7 +17,6 @@ public class UserImpl implements UserApi {
     @Override
     public User Login(User newUser) {
         try{
-            System.out.println(newUser.getId());
             String sql = "select * from user_info where `user_id` = ? and `password` = ?";//对表的操作语句
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setString(1,newUser.getId());
