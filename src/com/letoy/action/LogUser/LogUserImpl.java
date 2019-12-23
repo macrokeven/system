@@ -2,11 +2,14 @@ package com.letoy.action.LogUser;
 
 import com.letoy.action.LogUser.LogUserApi;
 import com.letoy.module.LogUser;
+import com.letoy.module.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LogUserImpl implements LogUserApi {
     private Connection con;
@@ -36,5 +39,7 @@ public class LogUserImpl implements LogUserApi {
         }
         return newLogUser;
     }
+
+
 }
 

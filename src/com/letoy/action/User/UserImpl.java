@@ -63,4 +63,42 @@ public class UserImpl implements UserApi {
         }
         return list;
     }
+
+    @Override
+    public List showDetailUser(String id,String type) {
+        List<User> list = null;
+        try {
+            String sql = null;
+            switch (type){
+                case "career":
+                    sql = "select * from user where `career_id` = ?;";
+                    break;
+                case "department":
+                    sql = "select * from user where `department_id` = ?;";
+                    break;
+            }
+
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1, id);
+            ResultSet rs = pstm.executeQuery();
+            list = new ArrayList<User>();
+            while (rs.next()) {
+                User newUser = new User();
+                newUser.setId(rs.getString("id"));
+                newUser.setName(rs.getString("name"));
+                newUser.setIdf(rs.getString("idf"));
+                newUser.setDepartment(rs.getString("department"));
+                newUser.setDepartment_id(rs.getString("department_id"));
+                newUser.setPosition(rs.getString("position"));
+                newUser.setPosition_id(rs.getString("position_id"));
+                newUser.setLevel(rs.getString("level"));
+                newUser.setCareer(rs.getString("career"));
+                newUser.setCareer_id(rs.getString("career_id"));
+                list.add(newUser);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
 }

@@ -6,6 +6,5 @@ import java.util.List;
 
 public interface DepartmentApi {
     List showDepartment();
-    List showDetailDepartment(String id);
     boolean changeDepartment(Department newDepartment);
 }

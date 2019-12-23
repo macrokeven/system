@@ -2,6 +2,7 @@ package com.letoy.action.Career;
 
 import com.letoy.module.Career;
 import com.letoy.module.Department;
+import com.letoy.module.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -58,4 +59,6 @@ public class CareerImpl implements CareerApi {
         }
         return list;
     }
+
+
 }

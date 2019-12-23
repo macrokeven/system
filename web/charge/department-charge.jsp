@@ -159,7 +159,7 @@
                                     while(iter.hasNext()){
                                         Department newDepartment = (Department) iter.next();
                                         String id =newDepartment.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='department-info.jsp?id="+id+"'>"+ newDepartment.getName()+"</a></div></td>");
+                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='department-info.jsp?id="+id+"&name="+newDepartment.getName()+"'>"+ newDepartment.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newDepartment.getPeople_number()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newDepartment.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' href='javascript:void(0)' >" +

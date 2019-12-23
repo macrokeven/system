@@ -121,7 +121,7 @@
 
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="#" class="current">职务管理</a></div>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">人事管理</a> <a href="#" class="current">职务管理</a></div>
         <h1>部门管理</h1>
     </div>
     <div class="container-fluid">
@@ -157,7 +157,7 @@
                                     while(iter.hasNext()){
                                         Career newCareer = (Career) iter.next();
                                         String id =newCareer.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'>"+ newCareer.getName()+"</div></td>");
+                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='career-info.jsp?id="+id+"&name="+newCareer.getName()+"'>"+ newCareer.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newCareer.getPeople_number()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newCareer.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +

@@ -12,9 +12,10 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.letoy.action.Factory" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="com.letoy.module.Department" %>
+<%@ page import="com.letoy.module.User" %>
 <%
     String DepartmentId = request.getParameter("id");
+    String name = request.getParameter("name");
 %>
 
 <!DOCTYPE html>
@@ -63,7 +64,15 @@
     </script>
 </head>
 <body>
-
+<%
+    Iterator iter = null;
+    List Department_list = null;
+    try {
+        Department_list = Factory.getUserInstance().showDetailUser(DepartmentId,"department");
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+%>
 <!--Header-part-->
 <div id="header">
     <h1><a href="dashboard.jsp">MatAdmin</a></h1>
@@ -125,8 +134,8 @@
 
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="department-charge.jsp" class="tip-bottom">部门管理</a><a href="#" class="current">查看详细信息</a></div>
-        <h1>部门详细信息</h1>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="department-charge.jsp?id=<%=DepartmentId%>" class="tip-bottom">部门管理</a><a href="#" class="current">查看详细信息</a></div>
+        <h1><%=name%>详细信息</h1>
     </div>
     <div class="container-fluid">
         <hr>
@@ -134,7 +143,7 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>查看部门信息</h5>
+                        <h5>查看<%=name%>信息</h5>
                     </div>
 
                     <div class="widget-content nopadding">
@@ -142,9 +151,10 @@
                             <table class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
-                                    <th width="30%">部门名称</th>
-                                    <th width="30%">部门人数</th>
-                                    <th width="30%">部门等级</th>
+                                    <th width="22.5%">员工名称</th>
+                                    <th width="22.5%">级别</th>
+                                    <th width="22.5%">员工类型</th>
+                                    <th width="22.5%">员工职称</th>
                                     <th width="10%">操作</th>
                                 </tr>
                                 </thead>
@@ -155,23 +165,19 @@
                                 <colgroup><col style="width: 80px;" /><col /></colgroup>
                                 <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
                             <%
-                                try{
-                                    List Department_list = Factory.getDepartmentInstance().showDepartment();
-                                    Iterator iter = Department_list.iterator();
-                                    while(iter.hasNext()){
-                                        Department newDepartment = (Department) iter.next();
-                                        String id =newDepartment.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='department_info.jsp?id="+id+"'>"+ newDepartment.getName()+"</a></div></td>");
-                                        out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newDepartment.getPeople_number()+"</td>");
-                                        out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newDepartment.getLevel()+"</td>");
-                                        out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' href='javascript:void(0)' >" +
-                                                "<em class='icon-pencil'></em>编辑</div></a></td>" +
-                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Department&id="+id+"' >" +
-                                                "<em class='icon-remove'></em>删除</a></div></td></tr>");
-                                    }
-                                }catch (Exception e){
-                                    e.printStackTrace();
-                                }
+                            iter = Department_list.iterator();
+                            while(iter.hasNext()){
+                                User newUser = (User) iter.next();
+                                String id =newUser.getId();
+                                out.print("<tr><td  style='text-align: center'  width='22.5%'><div id='name"+id+"'><a href='department_info.jsp?id="+id+"'>"+ newUser.getName()+"</a></div></td>");
+                                out.print("<td  style='text-align: center' width='22.5%'><div id='people"+id+"'>"+ newUser.getLevel()+"</td>");
+                                out.print("<td  style='text-align: center' width='22.5%'><div id='level"+id+"'>"+ newUser.getCareer()+"</td>");
+                                out.print("<td  style='text-align: center' width='22.5%'><div id='level"+id+"'>"+ newUser.getPosition()+"</td>");
+                                out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' href='javascript:void(0)' >" +
+                                "<em class='icon-pencil'></em>编辑</div></a></td>" +
+                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Department&id="+id+"' >" +
+                                "<em class='icon-remove'></em>删除</a></div></td></tr>");
+                            }
                             %>
                             </table>
                         </div>
