@@ -17,11 +17,12 @@ public class ProjectImpl implements ProjectApi {
     }
 
     @Override
-    public List showProject() {
+    public List showProject(String type) {
         List<Project> list = null;
         try{
-            String sql = "select * from project;";//对表的操作语句
+            String sql = "select * from project where `status` = ?;";//对表的操作语句
             PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,type);
             ResultSet rs = pstm.executeQuery();
             list = new ArrayList<Project>();
             while(rs.next()){
@@ -37,5 +38,24 @@ public class ProjectImpl implements ProjectApi {
             e.printStackTrace();
         }
         return list;
+    }
+
+    @Override
+    public boolean actionProject(String action,String id) {
+        boolean flag= false;
+        try{
+            String sql = "update project set `status` = ? where `id`=?;";
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,action);
+            pstm.setString(2,id);
+            System.out.println(pstm);
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+            con.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return flag;
     }
 }

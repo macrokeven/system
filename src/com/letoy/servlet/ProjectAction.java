@@ -1,8 +1,5 @@
 package com.letoy.servlet;
 
-import com.letoy.action.Factory;
-import com.letoy.module.LogUser;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,29 +7,32 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.concurrent.ExecutionException;
 
-@WebServlet(name = "Login")
-public class Login extends HttpServlet {
+import com.letoy.action.Factory;
+import com.letoy.module.Project;
+
+@WebServlet(name = "ProjectAction")
+public class ProjectAction extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
-        LogUser lgUser = new LogUser();
-        lgUser.setId(request.getParameter("id"));
-        lgUser.setPwd(request.getParameter("pwd"));
-            try {
-                lgUser = Factory.getLogUserInstance().Login(lgUser);
-                if("failed".equals(lgUser.getLogin_status())){
-                    out.println("<script>alert('用户名或者密码错误！');location.href='index.jsp'</script>");
+        Project newProject = new Project();
+        String id=request.getParameter("id");
+        String status = request.getParameter("action");
+        try{
+            if(Factory.getProjectInstance().actionProject(status,id)){
+                if("status".equals("pass")||"status".equals("fail")) {
+                    response.sendRedirect("xm/xmsp.jsp");
                 }
-                if("login".equals(lgUser.getLogin_status())){
-                    response.sendRedirect("main.jsp");
+                if("status".equals("finish")){
+                    response.sendRedirect("xm/xmys.jsp");
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
             }
-
-
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

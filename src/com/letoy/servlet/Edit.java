@@ -39,16 +39,21 @@ public class Edit extends HttpServlet {
             if(Factory.getCareerInstance().changeCareer(newCareer)){
                 out.println("<script>location.href='charge/career-charge.jsp'</script>");
             }
-        }else if("teacher".equals(action)){
+        }else if("user".equals(action)){
             User newUser = new User();
             newUser.setLevel(request.getParameter("level"));
-            newUser.setDepartment(request.getParameter("department"));
+            newUser.setDepartment(request.getParameter("department_name"));
             newUser.setSex(request.getParameter("sex"));
             newUser.setInformation(request.getParameter("information"));
             newUser.setName(request.getParameter("name"));
             newUser.setId(request.getParameter("id"));
+            newUser.setDepartment_id(request.getParameter("department_id"));
+            newUser.setPosition(request.getParameter("position_name"));
+            newUser.setPosition_id(request.getParameter("position_id"));
+            newUser.setCareer(request.getParameter("career_name"));
+            newUser.setCareer_id(request.getParameter("career_id"));
             if(Factory.getUserInstance().changeUser(newUser)){
-                out.println("<script>location.href='charge/teacher-charge.jsp'</script>");
+                out.println("<script>location.href='charge/user-charge.jsp'</script>");
             }
         }else if("position".equals(action)){
             Position newPosition = new Position();

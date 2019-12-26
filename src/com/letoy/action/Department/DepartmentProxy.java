@@ -35,4 +35,8 @@ public class DepartmentProxy implements DepartmentApi{
         return flag;
     }
 
+    @Override
+    public List showDetailDepartment() {
+        return this.dao.showDetailDepartment();
+    }
 }

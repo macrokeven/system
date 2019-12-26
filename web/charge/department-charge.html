@@ -2,35 +2,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>部门管理</title>
+    <title>通用表单页面</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel='stylesheet' href='../static/css/bootstrap.min.css'/><link rel='stylesheet' href='../static/css/bootstrap-responsive.min.css' /><link rel='stylesheet' href='../static/css/colorpicker.css' /><link rel='stylesheet' href='../static/css/datepicker.css' /><link rel='stylesheet' href='../static/css/uniform.css' /><link rel='stylesheet' href='../static/css/select2.css' /><link rel='stylesheet' href='../static/css/matrix-style.css' /><link rel='stylesheet' href='../static/css/matrix-media.css' /><link rel='stylesheet' href='../static/css/bootstrap-wysihtml5.css' /><link href='../static/font-awesome/css/font-awesome.css' rel='stylesheet' /><link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-    <style>
-        table{
-            border-collapse: collapse;
-        }
-        .table-head{padding-right:17px;background-color:#f2f2f2;color:#000;}
-        .table-body{width:100%; height:350px;overflow-y:scroll;}
 
-        .table-body table{width:100%;border-collapse: collapse;}
-        .table-body table tr:nth-child(2n+1){background-color:#f2f2f2;}
-    </style>
-	<script>
-		function edit(a){
-			document.getElementById("name"+a).innerHTML="<form id='form1' action='../edit?action=department&id="+a+"' method='post'><input type='text' name='name'>";
-			document.getElementById("people"+a).innerHTML="<input type='text' name='people'>";
-			document.getElementById("level"+a).innerHTML="<input type='text' name='level'>";
-			document.getElementById("edit"+a).innerHTML="<button onclick='submit()'>提交</button>";
-			document.getElementById("delete"+a).innerHTML="<button onclick='refresh()'>取消</button></form>";
-		}
-		function refresh(){
-			location.href="department-charge.html"
-		}
-		function submit(){
-			document.getElementById("form1").submit();
-		}
-	</script>
+    <script>
+        var status="ok";
+        function edit(a){
+            if(status==="ok"){
+                var oldname = document.getElementById("name"+a).innerText;
+                var oldlevel = document.getElementById("level"+a).innerText;
+                var oldsex = document.getElementById("sex"+a).innerText;
+                document.getElementById("name"+a).innerHTML="<input type='text' id='name' value='"+oldname+"' style='text-align: center'>";
+                document.getElementById("information"+a).innerHTML="<input type='text' id='information' value='"+oldinformation+"' style='text-align: center'>";
+                document.getElementById("level"+a).innerHTML="<input type='text' id='level' value='"+oldlevel+"' style='text-align: center'>";
+                document.getElementById("sex"+a).innerHTML="<input type='text' id='sex' value='"+oldsex+"' style='text-align: center'>";
+                document.getElementById("department"+a).innerHTML="<select id='department'><option value='100001'>管理部门</option><option value='100002'>审批部门</option><option value='100003'>行政部门</option><option value='100004'>教学部门</option><option value='100005'>其他部门</option><option value='100006'>zcvzv</option></select>";
+                document.getElementById("edit"+a).innerHTML="<button class='btn tip-left' onclick='submit("+a+")'>提交</button>";
+                document.getElementById("delete"+a).innerHTML="<button class='btn tip-left' onclick='refresh()'>取消</button>";
+                status = "no";
+            }
+
+        }
+        function refresh(){
+            location.href="user-charge.jsp"
+        }
+        function submit(id){
+            var name = document.getElementById("name").value;
+            var level = document.getElementById("level").value;
+            var information = document.getElementById("information").value;
+            var sex = document.getElementById("sex").value;
+            var department_id = document.getElementById("department").value;
+            var b = document.getElementById("department");
+            var department_name = b.options[b.selectedIndex].innerHTML;
+            var path = "../Edit?action=user&id="+id+"&name="+name+"&level="+level+"&information="+information+"&sex="+sex+"&department_name="+department_name+"&department_id="+department_id;
+            location.href=path;
+        }
+    </script>
 </head>
 <body>
 
@@ -38,7 +47,9 @@
 <div id="header">
     <h1><a href="dashboard.jsp">MatAdmin</a></h1>
 </div>
+<!--close-Header-part-->
 
+<!--top-Header-menu-->
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
         <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎Admin</span><b class="caret"></b></a>
@@ -66,25 +77,28 @@
     </ul>
 </div>
 
+<!--start-top-serch-->
 <div id="search">
     <input type="text" placeholder="请输入搜索内容..."/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div>
+<!--close-top-serch-->
+
+<!--sidebar-menu-->
 
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> 控制台</a>
     <ul>
         <li><a href="../main.jsp"><i class="icon icon-home"></i> <span>首页</span></a> </li>
         <li class="submenu open" > <a href="#"><i class="icon icon-th-list"></i> <span>人事管理</span> </a>
             <ul>
-                <li  class="active"><a href="../charge/department-charge.jsp">部门管理</a></li>
+                <li><a href="../charge/department-charge.jsp">部门管理</a></li>
                 <li><a href="../charge/career-charge.jsp">职务管理</a></li>
                 <li><a href="../charge/positional-charge.jsp">职称管理</a></li>
-                <li><a href="../charge/teacher-charge.jsp">教师信息管理</a></li>
+                <li  class="active"><a href="../charge/user-charge.jsp">员工信息管理</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="../xm/xmsb.jsp">项目申报</a></li>
                 <li><a href="../xm/xmsp.jsp">项目审批</a></li>
                 <li><a href="../xm/xmys.jsp">项目验收</a></li>
             </ul>
@@ -94,10 +108,11 @@
     </ul>
 </div>
 
+
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="#" class="current">部门管理</a></div>
-        <h1>部门管理</h1>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">人事管理</a> <a href="#" class="current">员工管理</a></div>
+        <h1>员工管理</h1>
     </div>
     <div class="container-fluid">
         <hr>
@@ -105,7 +120,7 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>查看部门信息</h5>
+                        <h5>查看员工信息</h5>
                     </div>
 
                     <div class="widget-content nopadding">
@@ -113,70 +128,22 @@
                             <table class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
-                                    <th width="30%">部门名称</th>
-                                    <th width="30%">部门人数</th>
-                                    <th width="30%">部门等级</th>
+                                    <th width="15%">员工名称</th>
+                                    <th width="15%">员工部门</th>
+                                    <th width="15%">员工性别</th>
+                                    <th width="15%">员工职务</th>
+                                    <th width="15%">员工职称</th>
+                                    <th width="15%">员工等级</th>
                                     <th width="10%">操作</th>
                                 </tr>
                                 </thead>
                             </table>
                         </div>
                         <div class="table-body">
-							<table class="table table-bordered table-striped">
-                                <colgroup><col style="width: 80px;" /><col /></colgroup>
-                                <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
-                                        <tr><td  style='text-align: center'  width='30%'>数学研究</td><td  style='text-align: center' width='30%'>李霸天</td>
-											<td  style='text-align: center' width='30%'>waiting</td>
-											<td  width='5%'><a class="tip" href="editLession.jsp?id=500001"><em class="icon-magic"></em>编辑</a>
-											</td><td  width='5%'><a class='tip' href='../delete?action=Lession&id=500001' title='删除'><em class='icon-remove'></em>删除</a></td></tr>
-                            </table>
                             <table class="table table-bordered table-striped">
                                 <colgroup><col style="width: 80px;" /><col /></colgroup>
                                 <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
-								<tr>
-									<td  style='text-align: center'  width='30%'><div id='name100001'>管理部门</div></td>
-									<td  style='text-align: center' width='30%'><div id='people100001'>10</div></td>
-									<td  style='text-align: center' width='30%'><div id='level100001'>A</div></td>
-									<td	  width='5%'><div id='edit100001'>
-										<a class='tip' onClick="edit(100001)"><em class="icon-pencil"></em>编辑</a>
-										</div>
-									</td>
-									<td  width='5%'><div id='delete100001'><a class='tip' href='../delete?action=Lession&id=100001' title='删除'><i class='icon-remove'></i>删除</a></div></td>
-								</tr>
-								<tr>
-									<td  style='text-align: center'  width='30%'>审批部门</td>
-									<td  style='text-align: center' width='30%'>10</td>
-									<td  style='text-align: center' width='30%'>B</td>
-									<td  width='5%'><a class='tip' href='editLession.jsp?id=100002' title='编辑'><em class='icon-pencil'></em>编辑</a></td>
-									<td  width='5%'><a class='tip' href='../delete?action=Lession&id=100002' title='删除'><i class='icon-remove'></i>删除</a></td>
-								</tr>
-								<tr>
-									<td  style='text-align: center'  width='30%'>行政部门</td>
-									<td  style='text-align: center' width='30%'>10</td>
-									<td  style='text-align: center' width='30%'>B</td>
-									<td  width='5%'><a class='tip' href='editLession.jsp?id=100003' title='编辑'><i class='icon-pencil'></i>编辑</a></td>
-									<td  width='5%'><a class='tip' href='../delete?action=Lession&id=100003' title='删除'><i class='icon-remove'></i>删除</a></td>
-								</tr>
-								<tr>
-									<td  style='text-align: center'  width='30%'>教学部门</td>
-									<td  style='text-align: center' width='30%'>10</td>
-									<td  style='text-align: center' width='30%'>C</td>
-									<td  width='5%'><a class='tip' href='editLession.jsp?id=100004' title='编辑'><i class='icon-pencil'></i>编辑</a></td>
-									<td  width='5%'><a class='tip' href='../delete?action=Lession&id=100004' title='删除'><i class='icon-remove'></i>删除</a></td>
-								</tr>
-								<tr>
-									<td  style='text-align: center'  width='30%'>阿萨德</td>
-									<td  style='text-align: center' width='30%'>13</td>
-									<td  style='text-align: center' width='30%'>C</td>
-									<td  width='5%'><a class='tip' href='editLession.jsp?id=100005' title='编辑'><i class='icon-pencil'></i>编辑</a></td>
-									<td  width='5%'><a class='tip' href='../delete?action=Lession&id=100005' title='删除'><i class='icon-remove'></i>删除</a></td>
-								</tr>
-								<tr><td  style='text-align: center'  width='30%'>zcvzv</td>
-									<td  style='text-align: center' width='30%'>13</td>
-									<td  style='text-align: center' width='30%'>D</td>
-									<td  width='5%'><a class='tip' href='editLession.jsp?id=100006' title='编辑'><i class='icon-pencil'></i>编辑</a></td>
-									<td  width='5%'><a class='tip' href='../delete?action=Lession&id=100006' title='删除'><i class='icon-remove'></i>删除</a></td>
-								</tr>
+                                        <tr><td  style='text-align: center'  width='15%'><div id='name300001'><a href='user-info.jsp?id=300001&name=李霸天'>李霸天</a></div></td><td  style='text-align: center' width='15%'><div id='department300001'><a href='department-info.jsp?id=100003&name=行政部门'>行政部门</a></td><td  style='text-align: center' width='15%'><div id='sex300001'>男</td><td  style='text-align: center' width='15%'><div id='position300001'>教师</td><td  style='text-align: center' width='15%'><div id='position300001'>行政部门</td><td  style='text-align: center' width='15%'><div id='level300001'>C</td><td  width='5%'><div id='edit300001'><a class='tip' onclick='edit(300001)' ><i class='icon-pencil'></i>编辑</a></div></td><td  width='5%'><div id='delete300001'><a class='tip' href='../delete?action=User&id=300001' ><i class='icon-remove'></i>删除</a></div></td></tr><tr><td  style='text-align: center'  width='15%'><div id='name300002'><a href='user-info.jsp?id=300002&name=李叶皓'>李叶皓</a></div></td><td  style='text-align: center' width='15%'><div id='department300002'><a href='department-info.jsp?id=100004&name=教学部门'>教学部门</a></td><td  style='text-align: center' width='15%'><div id='sex300002'>男</td><td  style='text-align: center' width='15%'><div id='position300002'>管理者</td><td  style='text-align: center' width='15%'><div id='position300002'>教学部门</td><td  style='text-align: center' width='15%'><div id='level300002'>A</td><td  width='5%'><div id='edit300002'><a class='tip' onclick='edit(300002)' ><i class='icon-pencil'></i>编辑</a></div></td><td  width='5%'><div id='delete300002'><a class='tip' href='../delete?action=User&id=300002' ><i class='icon-remove'></i>删除</a></div></td></tr><tr><td  style='text-align: center'  width='15%'><div id='name300003'><a href='user-info.jsp?id=300003&name=李维昊'>李维昊</a></div></td><td  style='text-align: center' width='15%'><div id='department300003'><a href='department-info.jsp?id=100004&name=教学部门'>教学部门</a></td><td  style='text-align: center' width='15%'><div id='sex300003'>男</td><td  style='text-align: center' width='15%'><div id='position300003'>教师</td><td  style='text-align: center' width='15%'><div id='position300003'>教学部门</td><td  style='text-align: center' width='15%'><div id='level300003'>B</td><td  width='5%'><div id='edit300003'><a class='tip' onclick='edit(300003)' ><i class='icon-pencil'></i>编辑</a></div></td><td  width='5%'><div id='delete300003'><a class='tip' href='../delete?action=User&id=300003' ><i class='icon-remove'></i>删除</a></div></td></tr>
                             </table>
                         </div>
                     </div>

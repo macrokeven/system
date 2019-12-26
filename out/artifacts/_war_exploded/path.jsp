@@ -10,7 +10,7 @@
     String bmgl = "../charge/department-charge.jsp";
     String zwgl = "../charge/career-charge.jsp";
     String zcgl = "../charge/positional-charge.jsp";
-    String jsxx = "../charge/teacher-charge.jsp";
+    String jsxx = "../charge/user-charge.jsp";
     String error403 = "../error/error403.jsp";
     String error404 = "../error/error403.jsp";
     String error405 = "../error/error403.jsp";

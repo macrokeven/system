@@ -99,7 +99,7 @@
                 <li><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
                 <li  class="active"><a href="<%=zcgl%>">职称管理</a></li>
-                <li><a href="<%=jsxx%>">教师信息管理</a></li>
+                <li><a href="<%=jsxx%>">员工信息管理</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>

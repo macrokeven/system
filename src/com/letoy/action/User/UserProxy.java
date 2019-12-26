@@ -34,12 +34,12 @@ public class UserProxy implements UserApi {
     }
 
     @Override
-    public List showUser(String idf) {
-        return this.dao.showUser(idf);
+    public List showDetailUser(String id, String type) {
+        return this.dao.showDetailUser(id,type);
     }
 
     @Override
-    public List showDetailUser(String id, String type) {
-        return this.dao.showDetailUser(id,type);
+    public int countUser(String table, String name,String condition,String condition2) {
+        return this.dao.countUser(table,name,condition,condition2);
     }
 }

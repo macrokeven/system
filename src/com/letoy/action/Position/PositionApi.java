@@ -7,4 +7,5 @@ import java.util.List;
 public interface PositionApi {
     public List showPosition();
     boolean changePosition(Position newPosition);
+    List showDetailPosition();
 }

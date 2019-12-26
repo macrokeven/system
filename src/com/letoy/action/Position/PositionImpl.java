@@ -58,4 +58,26 @@ public class PositionImpl implements PositionApi {
         }
         return flag;
     }
+    @Override
+    public List showDetailPosition() {
+        List<Position> list = null;
+        try {
+
+            String sql = "select * from position;";
+            PreparedStatement pstm = con.prepareStatement(sql);
+            ResultSet rs = pstm.executeQuery();
+            list = new ArrayList<Position>();
+            while (rs.next()) {
+                Position newPosition = new Position();
+                newPosition.setId(rs.getString("id"));
+                newPosition.setName(rs.getString("name"));
+                newPosition.setPeople_number(rs.getString("people_number"));
+                newPosition.setLevel(rs.getString("level"));
+                list.add(newPosition);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
 }

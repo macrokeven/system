@@ -36,4 +36,9 @@ public class PositionProxy implements PositionApi {
         }
         return flag;
     }
+
+    @Override
+    public List showDetailPosition() {
+        return this.dao.showDetailPosition();
+    }
 }

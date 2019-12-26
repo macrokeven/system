@@ -5,34 +5,111 @@
       <artifact name="科研管理系统:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/web/test.jsp" line="17" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" line="31" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="完成了二级菜单的关联功能，准备下一步完善人事管理的所有">
-      <change afterPath="$PROJECT_DIR$/web/charge/positional-info.jsp" afterDir="false" />
+    <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/letoy/servlet/ProjectAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/charge/user-info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyan.sql" beforeDir="false" afterPath="$PROJECT_DIR$/keyan.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/----/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/META-INF/科研管理系统.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/career-charge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Edit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/department-charge.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/department-charge.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/error403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/error404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/error405.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/error500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/positional-charge.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/teacher-charge.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xmsb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xmsp.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xmys.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xshd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/META-INF/科研管理系统.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/teacher-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/teacher-charge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/teacher-charge.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/index_moudle.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/index_moudle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/lwtj.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/lwtj.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/path.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/path.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Edit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/servlet/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/servlet/Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/letoy/servlet/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/servlet/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/career-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/career-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/career-info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/department-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-charge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/department-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/department-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/positional-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/positional-charge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/charge/positional-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/positional-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/positional-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/positional-info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/teacher-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/teacher-charge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/teacher-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/user-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/form-validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/form-wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_moudle.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_moudle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/lwtj.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/lwtj.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/path.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/path.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xmsb.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xmsb.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsb.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xmsp.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xmsp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xmys.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmys.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xmys.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmys.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xshd.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xshd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xm/xshd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xshd.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +119,112 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/charge/user-charge.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="96" column="69" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="790">
+              <caret line="81" column="5" selection-start-line="61" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Edit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Career/CareerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/charge/user-info.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="156" column="227" selection-start-line="156" selection-start-column="99" selection-end-line="156" selection-end-column="227" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,18 +246,26 @@
       <find>/static</find>
       <find>css/</find>
       <find>System.</find>
-      <find>Department</find>
-      <find>department</find>
       <find>career</find>
       <find>Career</find>
       <find>TeacherImpl</find>
       <find>Teacher</find>
       <find>teacher</find>
-      <find>Position</find>
       <find>User</find>
+      <find>Sys</find>
+      <find>&lt;li&gt;&lt;a href=&quot;&lt;%=jsxx%&gt;&quot;&gt;教师信息管理&lt;/a&gt;&lt;/li&gt;</find>
+      <find>&lt;li  class=&quot;active&quot;&gt;&lt;a href=&quot;&lt;%=jsxx%&gt;&quot;&gt;教师信息管理&lt;/a&gt;&lt;/li&gt;</find>
+      <find>&lt;a href=&quot;&lt;%=jsxx%&gt;&quot;&gt;教师信息管理&lt;/a&gt;</find>
+      <find>teacher-charge</find>
+      <find>'&lt;li&gt;&lt;a href=&quot;&lt;%=jsxx%&gt;&quot;&gt;员工信息管理&lt;/a&gt;&lt;/li&gt;</find>
+      <find>&quot;</find>
+      <find>Copyright &amp;copy; 2018.Company name All rights reserved</find>
+      <find>教师</find>
+      <find>Department</find>
+      <find>department</find>
+      <find>Position</find>
     </findStrings>
     <replaceStrings>
-      <replace>'</replace>
       <replace>&quot;+level+&quot;</replace>
       <replace>&gt;&quot;);</replace>
       <replace>+</replace>
@@ -87,18 +278,60 @@
       <replace>static</replace>
       <replace>../static/css</replace>
       <replace>../static/css/</replace>
-      <replace>Career</replace>
-      <replace>position</replace>
-      <replace>Position</replace>
       <replace>teacher</replace>
       <replace>UserImpl</replace>
       <replace>User</replace>
       <replace>Teacher</replace>
       <replace>LogUser</replace>
+      <replace>'&lt;li&gt;&lt;a href=&quot;&lt;%=jsxx%&gt;&quot;&gt;员工信息管理&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>user-charge</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;&lt;%=jsxx%&gt;&quot;&gt;员工信息管理&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>'</replace>
+      <replace>Copyright &amp;copy; 2019.China Letoy All rights reserved</replace>
+      <replace>员工</replace>
+      <replace>Position</replace>
+      <replace>position</replace>
+      <replace>Career</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/charge/teacher-charge.jsp" />
+        <option value="$PROJECT_DIR$/web/main.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/positional-charge.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/career-charge.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/department-charge.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/user-info.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/positional-info.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/department-info.jsp" />
+        <option value="$PROJECT_DIR$/web/charge/career-info.jsp" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
+        <option value="$PROJECT_DIR$/src/com/letoy/servlet/Project.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java" />
+        <option value="$PROJECT_DIR$/web/xm/xmsp.jsp" />
+        <option value="$PROJECT_DIR$/web/xm/xmys.jsp" />
+        <option value="$PROJECT_DIR$/src/com/letoy/servlet/ProjectAction.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/servlet/Login.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Position/PositionApi.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" />
+        <option value="$PROJECT_DIR$/web/charge/user-charge.jsp" />
+        <option value="$PROJECT_DIR$/src/com/letoy/servlet/Edit.java" />
+        <option value="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -107,9 +340,130 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2524" />
+    <option name="height" value="1407" />
+  </component>
   <component name="ProjectId" id="1Uod5Ew3Ow8QgWMxb5owYwRnbYZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="Career" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="Department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="Position" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="letoy" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="charge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="xm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -131,19 +485,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\科研管理系统git\web\charge" />
       <recent name="$PROJECT_DIR$/web/charge" />
-      <recent name="$PROJECT_DIR$/web/xm" />
-      <recent name="$PROJECT_DIR$/web/error" />
-      <recent name="$PROJECT_DIR$/web/static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.letoy.action" />
       <recent name="com.letoy.sql" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/charge" />
-      <recent name="D:\IdeaProjects\科研管理系统git\web\charge" />
+      <recent name="$PROJECT_DIR$/web/xm" />
+      <recent name="$PROJECT_DIR$/web/error" />
+      <recent name="$PROJECT_DIR$/web/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,6 +630,7 @@
       <workItem from="1576825768364" duration="40161000" />
       <workItem from="1577345769751" duration="491000" />
       <workItem from="1577346474713" duration="2371000" />
+      <workItem from="1577372342423" duration="10920000" />
     </task>
     <task id="LOCAL-00001" summary="干掉登录模块">
       <created>1576763919678</created>
@@ -315,6 +670,80 @@
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22050000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49628055" visible="true" weight="0.08657244" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.50371945" side_tool="true" weight="0.08657244" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299532" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991166" visible="true" weight="0.21216848" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008834" side_tool="true" weight="0.32761312" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32917318" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49843994" visible="true" weight="0.08627798" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.50116915" side_tool="true" weight="0.11101296" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299532" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991166" weight="0.32761312" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008834" side_tool="true" weight="0.32761312" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299293" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -324,6 +753,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -351,7 +786,356 @@
     <MESSAGE value="第一阶段开发完成" />
     <MESSAGE value="架构升级，将teacher类修改为User用户类，以便于日后扩展功能" />
     <MESSAGE value="完成了二级菜单的关联功能，准备下一步完善人事管理的所有功能。" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了二级菜单的关联功能，准备下一步完善人事管理的所有功能。" />
+    <MESSAGE value="基本完成人事系统的开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本完成人事系统的开发" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Career/CareerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/positional-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="102" column="17" lean-forward="true" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="70" column="72" lean-forward="true" selection-start-line="70" selection-start-column="72" selection-end-line="70" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/module/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/career-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="88" column="17" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Career/CareerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/positional-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3726">
+          <caret line="162" column="75" selection-start-line="162" selection-start-column="75" selection-end-line="162" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/department-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="171" column="91" selection-start-line="171" selection-start-column="91" selection-end-line="171" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/career-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3864">
+          <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/department-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3956">
+          <caret line="172" column="30" selection-start-line="172" selection-start-column="30" selection-end-line="172" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/PaperStatics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/AcademicActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/ErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/module/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/xm/xmys.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2869">
+          <caret line="135" column="107" selection-start-line="135" selection-start-column="107" selection-end-line="135" selection-end-column="107" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/xm/xmsp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1179">
+          <caret line="55" column="98" lean-forward="true" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/ProjectCharge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/PersonalCharge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/ProjectAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="70" lean-forward="true" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#doGet#0;class#Project#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Position/PositionApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/user-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="156" column="227" selection-start-line="156" selection-start-column="99" selection-end-line="156" selection-end-column="227" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="81" column="5" selection-start-line="61" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Career/CareerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/user-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="96" column="69" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Edit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <folding>
+            <element signature="e#0#3869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Edit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

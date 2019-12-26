@@ -78,7 +78,7 @@
                 <li><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
                 <li><a href="<%=zcgl%>">职称管理</a></li>
-                <li><a href="<%=jsxx%>">教师信息管理</a></li>
+                <li><a href="<%=jsxx%>">员工信息管理</a></li>
             </ul>
         </li>
         <li class="submenu  open"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
@@ -124,19 +124,18 @@
                             <table class="table table-bordered table-striped">
                                 <colgroup><col style="width: 80px;" /><col /></colgroup>
                                 <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
-                                    <em class="icon-"
                                         <%
                                 try{
-                                    List Project_list = Factory.getProjectInstance().showProject();
+                                    List Project_list = Factory.getProjectInstance().showProject("waiting");
                                     Iterator iter = Project_list.iterator();
                                     while(iter.hasNext()){
                                         Project newProject = (Project) iter.next();
                                         out.print("<tr><td  style='text-align: center'  width='30%'>"+ newProject.getName()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'>"+ newProject.getCharger_name()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'>"+ newProject.getStatus()+"</td>");
-                                        out.print("<td  width='5%'><a class='tip' href='editLession.jsp?id="+newProject.getId()+"' title='通过'>" +
+                                        out.print("<td  width='5%'><a class='tip' href='../ProjectAction?action=pass&id="+newProject.getId()+"' title='通过'>" +
                                                 "<em class='icon-ok'></em>通过</a></td>" +
-                                                "<td  width='5%'><a class='tip' href='../delete?action=Lession&id="+newProject.getId()+"' title='不通过'>" +
+                                                "<td  width='5%'><a class='tip' href='../ProjectAction?action=fail&id="+newProject.getId()+"' title='不通过'>" +
                                                 "<em class='icon-remove'></em>不通过</a></td></tr>");
 
                                     }
@@ -144,7 +143,9 @@
                                     e.printStackTrace();
                                 }
                             %>
+                                </div>
                             </table>
+
                         </div>
                     </div>
                 </div>
@@ -155,7 +156,7 @@
     </div></div>
 
 <div class="row-fluid">
-    <div id="footer" class="span12">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </div>
+    <div id="footer" class="span12">Copyright &copy; 2019.China Letoy All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </div>
 </div>
 
 <!--end-Footer-part-->

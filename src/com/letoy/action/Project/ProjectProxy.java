@@ -18,7 +18,12 @@ public class ProjectProxy implements ProjectApi {
         this.dao = new ProjectImpl(this.dbc.getConnection());
     }
     @Override
-    public List showProject() {
-        return this.dao.showProject();
+    public List showProject(String type) {
+        return this.dao.showProject(type);
+    }
+
+    @Override
+    public boolean actionProject(String action,String id) {
+        return this.dao.actionProject(action,id);
     }
 }

@@ -13,9 +13,20 @@
         function a(a){
             alert(a)
         }
+        function b(){
+            var a = document.getElementById("1").value;
+            var b = document.getElementById("1");
+            alert(b.options[b.selectedIndex].innerHTML);
+            alert(a);
+        }
     </script>
 </head>
 <body>
     <a href="javascript:void(0)" value="123" onclick="a(123)">123</a>
+    <select id="1">
+        <option value="10001" title="a">高数老师</option>
+        <option value="asd">b</option>
+    </select>
+    <button onclick="b()">click</button>
 </body>
 </html>

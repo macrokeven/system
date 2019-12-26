@@ -7,4 +7,5 @@ import java.util.List;
 public interface DepartmentApi {
     List showDepartment();
     boolean changeDepartment(Department newDepartment);
+    List showDetailDepartment();
 }

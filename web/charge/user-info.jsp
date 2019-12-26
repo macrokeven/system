@@ -1,40 +1,51 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/12/13
-  Time: 16:16
+  User: k.macro
+  Date: 2019/12/11
+  Time: 上午9:28
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="../path.jsp" %>
+<%@ include file="../path.jsp"%>
 <%@ page import="static com.letoy.path.pathConf.getCss" %>
 <%@ page import="static com.letoy.path.pathConf.getJs" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.letoy.action.Factory" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="com.letoy.module.Project" %>
 <%@ page import="com.letoy.module.User" %>
+<%
+    String position_id = request.getParameter("id");
+    String name = request.getParameter("name");
+    User newUser = null;
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>通用表单页面</title>
+    <title>部门管理</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%=getCss(1)%>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .table-head{padding-right:17px;background-color:#f2f2f2;color:#000;}
+        .table-body{width:100%; height:350px;overflow-y:scroll;}
+
+        .table-body table{width:100%;border-collapse: collapse;}
+        .table-body table tr:nth-child(2n+1){background-color:#f2f2f2;}
+    </style>
     <script>
         var status="ok";
         function edit(a){
             if(status==="ok"){
                 var oldname = document.getElementById("name"+a).innerText;
-                var oldinformation = document.getElementById("information"+a).innerText;
+                var oldpeople = document.getElementById("people"+a).innerText;
                 var oldlevel = document.getElementById("level"+a).innerText;
-                var oldsex = document.getElementById("sex"+a).innerText;
-                var olddepartment = document.getElementById("department"+a).innerText;
                 document.getElementById("name"+a).innerHTML="<input type='text' id='name' value='"+oldname+"' style='text-align: center'>";
-                document.getElementById("information"+a).innerHTML="<input type='text' id='information' value='"+oldinformation+"' style='text-align: center'>";
+                document.getElementById("people"+a).innerHTML="<input type='text' id='people' value='"+oldpeople+"' style='text-align: center'>";
                 document.getElementById("level"+a).innerHTML="<input type='text' id='level' value='"+oldlevel+"' style='text-align: center'>";
-                document.getElementById("sex"+a).innerHTML="<input type='text' id='sex' value='"+oldsex+"' style='text-align: center'>";
-                document.getElementById("department"+a).innerHTML="<input type='text' id='department' value='"+olddepartment+"' style='text-align: center'>";
                 document.getElementById("edit"+a).innerHTML="<button class='btn tip-left' onclick='submit("+a+")'>提交</button>";
                 document.getElementById("delete"+a).innerHTML="<button class='btn tip-left' onclick='refresh()'>取消</button>";
                 status = "no";
@@ -42,15 +53,13 @@
 
         }
         function refresh(){
-            location.href="teacher-charge.jsp"
+            location.href="department-charge.jsp"
         }
         function submit(id){
             var name = document.getElementById("name").value;
             var level = document.getElementById("level").value;
-            var information = document.getElementById("information").value;
-            var sex = document.getElementById("sex").value;
-            var department = document.getElementById("department").value;
-            var path = "../Edit?action=teacher&id="+id+"&name="+name+"&level="+level+"&information="+information+"&sex="+sex+"&department="+department;
+            var people = document.getElementById("people").value;
+            var path = "../Edit?action=department&id="+id+"&name="+name+"&level="+level+"&people="+people;
             location.href=path;
         }
     </script>
@@ -61,9 +70,7 @@
 <div id="header">
     <h1><a href="dashboard.jsp">MatAdmin</a></h1>
 </div>
-<!--close-Header-part-->
 
-<!--top-Header-menu-->
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
         <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎Admin</span><b class="caret"></b></a>
@@ -91,14 +98,10 @@
     </ul>
 </div>
 
-<!--start-top-serch-->
 <div id="search">
     <input type="text" placeholder="请输入搜索内容..."/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div>
-<!--close-top-serch-->
-
-<!--sidebar-menu-->
 
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> 控制台</a>
     <ul>
@@ -108,7 +111,7 @@
                 <li><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
                 <li><a href="<%=zcgl%>">职称管理</a></li>
-                <li  class="active"><a href="<%=jsxx%>">教师信息管理</a></li>
+                <li class="active"><a href="<%=jsxx%>">员工信息管理</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
@@ -122,11 +125,10 @@
     </ul>
 </div>
 
-
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">人事管理</a> <a href="#" class="current">教师管理</a></div>
-        <h1>教师管理</h1>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em>首页</a> <a href="#" class="tip-bottom">人事管理</a> <a href="<%=jsxx%>" class="tip-bottom">员工信息管理</a><a href="#" class="current">查看个人信息</a></div>
+        <h1>员工： <%=name%></h1>
     </div>
     <div class="container-fluid">
         <hr>
@@ -134,51 +136,42 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>查看教师信息</h5>
+                        <h5>查看 <%=name%> 个人信息</h5>
                     </div>
 
                     <div class="widget-content nopadding">
-                        <div class="table-head">
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th width="18%">教师名称</th>
-                                    <th width="18%">教师部门</th>
-                                    <th width="18%">教师性别</th>
-                                    <th width="18%">教师信息</th>
-                                    <th width="18%">教师等级</th>
-                                    <th width="10%">操作</th>
-                                </tr>
-                                </thead>
-                            </table>
-                        </div>
-                        <div class="table-body">
-                            <table class="table table-bordered table-striped">
-                                <colgroup><col style="width: 80px;" /><col /></colgroup>
-                                <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
+
                                         <%
                                 try{
-                                    List User_list = Factory.getUserInstance().showUser("teacher");
-                                    Iterator iter = User_list.iterator();
+                                    List Career_list = Factory.getUserInstance().showDetailUser(position_id,"one");
+                                    Iterator iter = Career_list.iterator();
                                     while(iter.hasNext()){
-                                        User newUser = (User) iter.next();
+                                        newUser = (User) iter.next();
                                         String id =newUser.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='18%'><div id='name"+id+"'>"+ newUser.getName()+"</div></td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='department"+id+"'>"+ newUser.getDepartment()+"</td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='sex"+id+"'>"+ newUser.getSex()+"</td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='information"+id+"'>"+ newUser.getInformation()+"</td>");
-                                        out.print("<td  style='text-align: center' width='18%'><div id='level"+id+"'>"+ newUser.getLevel()+"</td>");
-                                        out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
-                                                "<i class='icon-pencil'></i>编辑</a></div></td>" +
-                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=User&id="+id+"' >" +
-                                                "<i class='icon-remove'></i>删除</a></div></td></tr>");
+                                        out.println("<table border='1' width='100%'>\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h2 style='color:black'>员工姓名："+newUser.getName()+"</h2></td>\n" +
+                                                "                                    <td rowspan='4'><h5>个人简介：</h5><br><h5>"+newUser.getInformation()+"</h5></td>\n" +
+                                                "                                </tr>\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h3 >所在部门：<a href='department-info.jsp?id="+newUser.getDepartment_id()+"&name="+newUser.getDepartment()+"'>"+newUser.getDepartment()+"</a></h3></td>\n" +
+                                                "                                </tr>\n" +
+                                                "\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h3 >工作职务：<a href='career-info.jsp?id="+newUser.getCareer_id()+"&name="+newUser.getCareer()+"'>"+newUser.getCareer()+"</a></h3></td>\n" +
+                                                "                                </tr>\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h3>工作职称：<a href='positional-info.jsp?id="+newUser.getPosition_id()+"&name="+newUser.getPosition()+"'>"+newUser.getPosition()+"</a></h3>\n" +
+                                                "                                        <h3>工作级别："+newUser.getLevel()+" 级</h3></td>\n" +
+                                                "                                </tr>\n" +
+                                                "                            </table>");
+                                        
                                     }
                                 }catch (Exception e){
                                     e.printStackTrace();
                                 }
                             %>
-                            </table>
-                        </div>
+
                     </div>
                 </div>
             </div>

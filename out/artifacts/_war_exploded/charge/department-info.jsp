@@ -118,7 +118,7 @@
                 <li   class="active"><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
                 <li><a href="<%=zcgl%>">职称管理</a></li>
-                <li><a href="<%=jsxx%>">教师信息管理</a></li>
+                <li><a href="<%=jsxx%>">员工信息管理</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
@@ -169,7 +169,7 @@
                             while(iter.hasNext()){
                                 User newUser = (User) iter.next();
                                 String id =newUser.getId();
-                                out.print("<tr><td  style='text-align: center'  width='22.5%'><div id='name"+id+"'><a href='department_info.jsp?id="+id+"'>"+ newUser.getName()+"</a></div></td>");
+                                out.print("<tr><td  style='text-align: center'  width='22.5%'><div id='name"+id+"'><a href='user-info.jsp?id="+newUser.getId()+"&name="+newUser.getName()+"'>"+ newUser.getName()+"</a></div></td>");
                                 out.print("<td  style='text-align: center' width='22.5%'><div id='people"+id+"'>"+ newUser.getLevel()+"</td>");
                                 out.print("<td  style='text-align: center' width='22.5%'><div id='level"+id+"'>"+ newUser.getCareer()+"</td>");
                                 out.print("<td  style='text-align: center' width='22.5%'><div id='level"+id+"'>"+ newUser.getPosition()+"</td>");

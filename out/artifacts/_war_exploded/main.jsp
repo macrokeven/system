@@ -71,7 +71,7 @@
                 <li><a href="charge/department-charge.jsp">部门管理</a></li>
                 <li><a href="charge/career-charge.jsp">职务管理</a></li>
                 <li><a href="charge/positional-charge.jsp">职称管理</a></li>
-                <li><a href="charge/teacher-charge.jsp">教师信息管理</a></li>
+                <li><a href="charge/user-charge.jsp">员工信息管理</a></li>
             </ul>
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
@@ -431,7 +431,7 @@
 <!--Footer-part-->
 
 <div class="row-fluid">
-    <div id="footer" class="span12">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </div>
+    <div id="footer" class="span12">Copyright &copy; 2019.China Letoy All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> </div>
 </div>
 
 <!--end-Footer-part-->
