@@ -76,6 +76,11 @@ public class UserImpl implements UserApi {
                 case "department":
                     sql = "select * from user where `department_id` = ?;";
                     break;
+                case "position":
+                    System.out.println("work");
+                    sql = "select * from user where `position_id` = ?;";
+                    break;
+
             }
 
             PreparedStatement pstm = con.prepareStatement(sql);

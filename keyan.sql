@@ -1,18 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : local
- Source Server Type    : MySQL
- Source Server Version : 50712
- Source Host           : localhost:3306
- Source Schema         : keyan
-
- Target Server Type    : MySQL
- Target Server Version : 50712
- File Encoding         : 65001
-
- Date: 26/12/2019 12:42:01
-*/
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
@@ -20,7 +5,6 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for career
 -- ----------------------------
-DROP TABLE IF EXISTS `career`;
 CREATE TABLE `career`  (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -38,7 +22,6 @@ INSERT INTO `career` VALUES (200002, '管理者', 10, 'B');
 -- ----------------------------
 -- Table structure for department
 -- ----------------------------
-DROP TABLE IF EXISTS `department`;
 CREATE TABLE `department`  (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -60,7 +43,7 @@ INSERT INTO `department` VALUES (100006, 'zcvzv', 13, 'D');
 -- ----------------------------
 -- Table structure for position
 -- ----------------------------
-DROP TABLE IF EXISTS `position`;
+
 CREATE TABLE `position`  (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -77,7 +60,6 @@ INSERT INTO `position` VALUES (10001, '高级教师', 10, 'A');
 -- ----------------------------
 -- Table structure for project
 -- ----------------------------
-DROP TABLE IF EXISTS `project`;
 CREATE TABLE `project`  (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -95,7 +77,6 @@ INSERT INTO `project` VALUES (500001, '数学研究', 'waiting', '300001', '李�
 -- ----------------------------
 -- Table structure for user
 -- ----------------------------
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (
   `id` int(10) NOT NULL,
   `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -119,8 +100,6 @@ INSERT INTO `user` VALUES (300001, '李霸天', '男', '最牛逼的老师', '�
 
 -- ----------------------------
 -- Table structure for user_info
--- ----------------------------
-DROP TABLE IF EXISTS `user_info`;
 CREATE TABLE `user_info`  (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,

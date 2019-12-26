@@ -152,12 +152,12 @@
                                     while(iter.hasNext()){
                                         Position newPosition = (Position) iter.next();
                                         String id =newPosition.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'>"+ newPosition.getName()+"</div></td>");
+                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='positional-info.jsp?id="+id+"&name="+newPosition.getName()+"'>"+ newPosition.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newPosition.getPeople_number()+"</td>");
                                         out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newPosition.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
                                                 "<i class='icon-pencil'></i>编辑</a></div></td>" +
-                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Position&id="+id+"' >" +
+                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Position&id="+id+" >" +
                                                 "<i class='icon-remove'></i>删除</a></div></td></tr>");
                                     }
                                 }catch (Exception e){

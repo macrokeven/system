@@ -121,7 +121,7 @@
 
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="#" class="current">职务管理</a></div>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">人事管理</a> <a href="#" class="current">职务管理</a></div>
         <h1>部门管理</h1>
     </div>
     <div class="container-fluid">
