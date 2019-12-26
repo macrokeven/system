@@ -9,7 +9,9 @@
     <bookmark url="file://$PROJECT_DIR$/web/charge/department-charge.jsp" line="167" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="" />
+    <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="完成了二级菜单的关联功能，准备下一步完善人事管理的所有">
+      <change beforePath="$PROJECT_DIR$/web/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/career-charge.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/charge/career-charge.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="128" column="31" lean-forward="true" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+            <state relative-caret-position="115">
+              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
@@ -556,7 +558,7 @@
       <workItem from="1576745182656" duration="7913000" />
       <workItem from="1576766887446" duration="585000" />
       <workItem from="1576823312372" duration="2397000" />
-      <workItem from="1576825768364" duration="39521000" />
+      <workItem from="1576825768364" duration="40161000" />
     </task>
     <task id="LOCAL-00001" summary="干掉登录模块">
       <created>1576763919678</created>
@@ -597,7 +599,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76420000" />
+    <option name="totallyTimeSpent" value="77060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
@@ -1200,8 +1202,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/charge/career-charge.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="128" column="31" lean-forward="true" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+        <state relative-caret-position="115">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
