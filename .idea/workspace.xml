@@ -9,41 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/web/charge/department-charge.jsp" line="167" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/charge/career-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Career/CareerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Career/CareerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/module/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/module/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Career/CareerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Career/CareerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/module/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/module/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Career/CareerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Career/CareerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/LogUser/LogUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/LogUser/LogUserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/module/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/module/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/career-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/department-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/department-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-info.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -590,7 +556,7 @@
       <workItem from="1576745182656" duration="7913000" />
       <workItem from="1576766887446" duration="585000" />
       <workItem from="1576823312372" duration="2397000" />
-      <workItem from="1576825768364" duration="37552000" />
+      <workItem from="1576825768364" duration="39521000" />
     </task>
     <task id="LOCAL-00001" summary="干掉登录模块">
       <created>1576763919678</created>
@@ -620,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1577120784617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成了二级菜单的关联功能，准备下一步完善人事管理的所有功能。">
+      <created>1577126519516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577126519516</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74451000" />
+    <option name="totallyTimeSpent" value="76420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
@@ -738,7 +711,8 @@
     <MESSAGE value="准备开发新的" />
     <MESSAGE value="第一阶段开发完成" />
     <MESSAGE value="架构升级，将teacher类修改为User用户类，以便于日后扩展功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="架构升级，将teacher类修改为User用户类，以便于日后扩展功能" />
+    <MESSAGE value="完成了二级菜单的关联功能，准备下一步完善人事管理的所有功能。" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了二级菜单的关联功能，准备下一步完善人事管理的所有功能。" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/error/error405.html">
