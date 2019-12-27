@@ -1,5 +1,6 @@
 package com.letoy.action.User;
 
+import com.letoy.module.LogUser;
 import com.letoy.module.User;
 
 import java.sql.Connection;
@@ -69,6 +70,7 @@ public class UserImpl implements UserApi {
 
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setString(1, id);
+            System.out.println(pstm);
             ResultSet rs = pstm.executeQuery();
             list = new ArrayList<User>();
             while (rs.next()) {
@@ -125,5 +127,27 @@ public class UserImpl implements UserApi {
         }
 
         return count;
+    }
+
+    @Override
+    public boolean addUser(LogUser newLogUser) {
+        boolean flag = false;
+        try{
+            String idf_id = newLogUser.getIdf_id();
+            if(idf_id ==""){
+                idf_id = "0";
+            }
+            String sql = "insert into user_info (id,user_id,password) values (?,?,?)";
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,idf_id);
+            pstm.setString(2,newLogUser.getId());
+            pstm.setString(3,newLogUser.getPwd());
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return flag;
     }
 }

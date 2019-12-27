@@ -1,6 +1,7 @@
 package com.letoy.action.User;
 
 import com.letoy.action.User.UserApi;
+import com.letoy.module.LogUser;
 import com.letoy.module.User;
 import com.letoy.sql.DataBaseConnection;
 
@@ -41,5 +42,10 @@ public class UserProxy implements UserApi {
     @Override
     public int countUser(String table, String name,String condition,String condition2) {
         return this.dao.countUser(table,name,condition,condition2);
+    }
+
+    @Override
+    public boolean addUser(LogUser newLogUser) {
+        return this.dao.addUser(newLogUser);
     }
 }

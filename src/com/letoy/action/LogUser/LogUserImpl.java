@@ -27,8 +27,8 @@ public class LogUserImpl implements LogUserApi {
             pstm.setString(2,newLogUser.getPwd());
             ResultSet rs = pstm.executeQuery();
             if(rs.next()) {
-                newLogUser.setId(rs.getString("id"));
-                newLogUser.setIdf_id(rs.getString("idf_id"));
+                newLogUser.setId(rs.getString("user_id"));
+                newLogUser.setIdf_id(rs.getString("id"));
                 newLogUser.setLogin_status("login");
             }else{
                 newLogUser.setLogin_status("fail");
