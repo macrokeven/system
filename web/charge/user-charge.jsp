@@ -216,8 +216,8 @@
                                         out.print("<tr><td  style='text-align: center'  width='15%'><div id='name"+id+"'><a href='user-info.jsp?id="+newUser.getId()+"&name="+newUser.getName()+"'>"+ newUser.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='department"+id+"'><a href='department-info.jsp?id="+newUser.getDepartment_id()+"&name="+newUser.getDepartment()+"'>"+newUser.getDepartment()+"</a></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='sex"+id+"'>"+ newUser.getSex()+"</td>");
-                                        out.print("<td  style='text-align: center' width='15%'><div id='career"+id+"'>"+ newUser.getCareer()+"</td>");
-                                        out.print("<td  style='text-align: center' width='15%'><div id='position"+id+"'>"+ newUser.getPosition()+"</td>");
+                                        out.print("<td  style='text-align: center' width='15%'><div id='career"+id+"'><a href='career-info.jsp?id="+newUser.getCareer_id()+"&name="+newUser.getName()+"'>"+newUser.getName()+"</a></td>");
+                                        out.print("<td  style='text-align: center' width='15%'><div id='position"+id+"'><a href='positional-info.jsp?id="+newUser.getPosition_id()+"&name="+newUser.getPosition()+"'>"+newUser.getPosition()+"</a></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='level"+id+"'>"+ newUser.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
                                                 "<i class='icon-pencil'></i>编辑</a></div></td>" +

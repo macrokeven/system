@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="form-actions">
-            <span class="pull-left"><a href="register.html" class="flip-link btn btn-info" id="to-recover">没有账号？</a></span>
+            <span class="pull-left"><a href="register.jsp" class="flip-link btn btn-info" id="to-recover">没有账号？</a></span>
             <span class="pull-right"><a type="submit" class="btn btn-success" onclick="tijiao()" > 登录</a></span>
         </div>
     </form>

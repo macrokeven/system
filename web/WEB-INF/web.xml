@@ -66,6 +66,15 @@
         <url-pattern>/ProjectAction</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.letoy.servlet.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
 
 
     <!-- servlet definition -->

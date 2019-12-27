@@ -11,105 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f180eab-1178-4e74-ba5e-fb7a56b75a4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/letoy/servlet/ProjectAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/charge/user-info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/letoy/servlet/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Department/DepartmentProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Position/PositionProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/Project/ProjectProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/action/User/UserProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Edit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/classes/com/letoy/servlet/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/career-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/department-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/positional-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/teacher-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/teacher-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/teacher-charge.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-validation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/form-wizard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/index_moudle.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/index_moudle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/invoice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/lwtj.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/lwtj.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/path.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/path.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsb.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmsp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xmys.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/xm/xshd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Department/DepartmentProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Position/PositionProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/Project/ProjectProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/action/User/UserProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Edit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/servlet/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/servlet/Edit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/letoy/servlet/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/letoy/servlet/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/user-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/charge/user-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/career-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/career-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/career-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/career-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/department-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/department-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/department-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/department-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/positional-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/positional-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/positional-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/positional-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/positional-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/positional-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/teacher-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/teacher-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/charge/teacher-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/user-charge.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/form-validation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/form-wizard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index_moudle.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_moudle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/invoice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lwtj.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/lwtj.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/path.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/path.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xmsb.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsb.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xmsb.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsb.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xmsp.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xmsp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmsp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xmys.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmys.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xmys.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xmys.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xshd.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xshd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/xm/xshd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xm/xshd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/charge/user-charge.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/charge/user-charge.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,24 +33,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/charge/user-charge.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="96" column="69" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
+            <state relative-caret-position="322">
+              <caret line="209" column="36" selection-start-line="209" selection-start-column="36" selection-end-line="209" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
@@ -150,11 +46,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Department/DepartmentImpl.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="81" column="5" selection-start-line="61" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+            <state relative-caret-position="115">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="49" column="112" lean-forward="true" selection-start-line="49" selection-start-column="112" selection-end-line="49" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="845">
+              <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/charge/positional-charge.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="154" column="222" selection-start-line="154" selection-start-column="121" selection-end-line="154" selection-end-column="222" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,17 +104,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Edit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="207">
+              <caret line="21" column="47" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="827">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,45 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java">
+        <entry file="file://$PROJECT_DIR$/web/charge/career-charge.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Position/PositionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/letoy/action/Career/CareerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/charge/user-info.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="156" column="227" selection-start-line="156" selection-start-column="99" selection-end-line="156" selection-end-column="227" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="483">
+              <caret line="159" column="214" selection-start-line="159" selection-start-column="121" selection-end-line="159" selection-end-column="214" />
             </state>
           </provider>
         </entry>
@@ -311,7 +218,6 @@
         <option value="$PROJECT_DIR$/web/charge/career-info.jsp" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/src/com/letoy/servlet/Project.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectImpl.java" />
         <option value="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectApi.java" />
         <option value="$PROJECT_DIR$/src/com/letoy/action/Project/ProjectProxy.java" />
@@ -327,9 +233,14 @@
         <option value="$PROJECT_DIR$/src/com/letoy/action/Position/PositionProxy.java" />
         <option value="$PROJECT_DIR$/src/com/letoy/action/User/UserApi.java" />
         <option value="$PROJECT_DIR$/src/com/letoy/action/User/UserProxy.java" />
-        <option value="$PROJECT_DIR$/web/charge/user-charge.jsp" />
         <option value="$PROJECT_DIR$/src/com/letoy/servlet/Edit.java" />
         <option value="$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java" />
+        <option value="$PROJECT_DIR$/web/charge/user-charge.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/letoy/servlet/Register.java" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
       </list>
     </option>
   </component>
@@ -444,6 +355,19 @@
               <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="charge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="科研管理系统git" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="科研管理系统git" type="b2602c69:ProjectViewProjectNode" />
@@ -630,7 +554,7 @@
       <workItem from="1576825768364" duration="40161000" />
       <workItem from="1577345769751" duration="491000" />
       <workItem from="1577346474713" duration="2371000" />
-      <workItem from="1577372342423" duration="10920000" />
+      <workItem from="1577372342423" duration="13464000" />
     </task>
     <task id="LOCAL-00001" summary="干掉登录模块">
       <created>1576763919678</created>
@@ -667,26 +591,34 @@
       <option name="project" value="LOCAL" />
       <updated>1577126519516</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="基本完成人事系统的开发">
+      <created>1577390676404</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577390676404</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22050000" />
+    <option name="totallyTimeSpent" value="24594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49628055" visible="true" weight="0.08657244" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4960396" visible="true" weight="0.08657244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.50371945" side_tool="true" weight="0.08657244" />
+      <window_info id="Web" order="7" sideWeight="0.5039604" side_tool="true" weight="0.08657244" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299532" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991166" visible="true" weight="0.21216848" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991166" visible="true" weight="0.21294852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -800,18 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/charge/positional-charge.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="102" column="17" lean-forward="true" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -831,18 +751,6 @@
             <element signature="e#2057#2058#0" expanded="true" />
             <element signature="e#2115#2116#0" expanded="true" />
             <element signature="e#2165#2166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/charge/career-charge.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="88" column="17" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -912,13 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1098,18 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/charge/user-charge.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="96" column="69" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/科研管理系统/com/letoy/servlet/Edit.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-483">
@@ -1119,20 +1008,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Edit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/letoy/action/User/UserImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="827">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/career-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="159" column="214" selection-start-line="159" selection-start-column="121" selection-end-line="159" selection-end-column="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/positional-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="154" column="222" selection-start-line="154" selection-start-column="121" selection-end-line="154" selection-end-column="222" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/charge/user-charge.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="209" column="36" selection-start-line="209" selection-start-column="36" selection-end-line="209" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Edit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="47" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/letoy/servlet/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="49" column="112" lean-forward="true" selection-start-line="49" selection-start-column="112" selection-end-line="49" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
         </state>
       </provider>
     </entry>
