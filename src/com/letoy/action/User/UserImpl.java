@@ -46,30 +46,35 @@ public class UserImpl implements UserApi {
     @Override
     public List showDetailUser(String id,String type) {
         List<User> list = null;
+        PreparedStatement pstm =null;
         try {
             String sql = null;
-            switch (type){
-                case "career":
-                    sql = "select * from user where `career_id` = ?;";
-                    break;
-                case "department":
-                    sql = "select * from user where `department_id` = ?;";
-                    break;
-                case "position":
-                    sql = "select * from user where `position_id` = ?;";
-                    break;
-                case "one":
-                    sql = "select * from user where `id` = ?;";
-                    break;
-                case "idf":
-                    sql = "select * from user where `idf` = ?;";
-                    break;
-
-
+            if(!"all".equals(type)) {
+                switch (type) {
+                    case "career":
+                        sql = "select * from user where `career_id` = ?;";
+                        break;
+                    case "department":
+                        sql = "select * from user where `department_id` = ?;";
+                        break;
+                    case "position":
+                        sql = "select * from user where `position_id` = ?;";
+                        break;
+                    case "one":
+                        sql = "select * from user where `id` = ?;";
+                        break;
+                    case "idf":
+                        sql = "select * from user where `idf` = ?;";
+                        break;
+                }
+                pstm = con.prepareStatement(sql);
+                pstm.setString(1, id);
+            }else{
+                sql = "select * from user";
+                pstm = con.prepareStatement(sql);
             }
 
-            PreparedStatement pstm = con.prepareStatement(sql);
-            pstm.setString(1, id);
+
             ResultSet rs = pstm.executeQuery();
             list = new ArrayList<User>();
             while (rs.next()) {
@@ -141,6 +146,31 @@ public class UserImpl implements UserApi {
             pstm.setString(1,idf_id);
             pstm.setString(2,newLogUser.getId());
             pstm.setString(3,newLogUser.getPwd());
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return flag;
+    }
+
+    @Override
+    public boolean addSystemUser(User newUser) {
+        boolean flag = false;
+        try{
+            String sql = "insert into user (name,sex,department,level,department_id,position,position_id,career,career_id,information) values (?,?,?,?,?,?,?,?,?,?)";
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,newUser.getName());
+            pstm.setString(2,newUser.getSex());
+            pstm.setString(3,newUser.getDepartment());
+            pstm.setString(4,newUser.getLevel());
+            pstm.setString(5,newUser.getDepartment_id());
+            pstm.setString(6,newUser.getPosition());
+            pstm.setString(7,newUser.getPosition_id());
+            pstm.setString(8,newUser.getCareer());
+            pstm.setString(9,newUser.getCareer_id());
+            pstm.setString(10,newUser.getInformation());
             if(pstm.executeLargeUpdate()==1){
                 flag = true;
             }

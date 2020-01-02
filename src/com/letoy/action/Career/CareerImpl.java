@@ -59,6 +59,23 @@ public class CareerImpl implements CareerApi {
         }
         return list;
     }
+    @Override
+    public boolean addCareer(Career newCareer) {
+        boolean flag = false;
+        String sql = "insert into career (name,people_number,level) values (?,0,?)";
+        try {
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,newCareer.getName());
+            pstm.setString(2,newCareer.getLevel());
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return flag;
 
+    }
 
 }

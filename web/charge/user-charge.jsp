@@ -83,23 +83,37 @@
             var name = document.getElementById("name").value;
             var level = document.getElementById("level").value;
             var sex = document.getElementById("sex").value;
-            
             var department_id = document.getElementById("department").value;
             var b = document.getElementById("department");
             var department_name = b.options[b.selectedIndex].innerHTML;
-            
             var career_id = document.getElementById("career").value;
             var c = document.getElementById("career");
             var career_name = c.options[c.selectedIndex].innerHTML;
-            
             var position_id = document.getElementById("position").value;
             var d = document.getElementById("position");
             var position_name = d.options[d.selectedIndex].innerHTML;
-            
-            
             var path = "../Edit?action=user&id="+id+"&name="+name+"&level="+level+"&sex="+sex+"&department_name="+department_name+"&department_id="+department_id+
                 "&position_id="+position_id+"&position_name="+position_name+
                 "&career_id="+career_id+"&career_name="+career_name;
+            location.href=path;
+        }
+        function submitUser(){
+            var name = document.getElementById("user_name").value;
+            var information = document.getElementById("user_information").value;
+            var level = document.getElementById("user_level").value;
+            var sex = document.getElementById("user_sex").value;
+            var department_id = document.getElementById("user_department").value;
+            var b = document.getElementById("user_department");
+            var department_name = b.options[b.selectedIndex].innerHTML;
+            var career_id = document.getElementById("user_career").value;
+            var c = document.getElementById("user_career");
+            var career_name = c.options[c.selectedIndex].innerHTML;
+            var position_id = document.getElementById("user_position").value;
+            var d = document.getElementById("user_position");
+            var position_name = d.options[d.selectedIndex].innerHTML;
+            var path = "../addNew?action=user&name="+name+"&level="+level+"&sex="+sex+"&department_name="+department_name+"&department_id="+department_id+
+                "&position_id="+position_id+"&position_name="+position_name+
+                "&career_id="+career_id+"&career_name="+career_name+"&information="+information;
             location.href=path;
         }
     </script>
@@ -174,7 +188,7 @@
                                 <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
                                         <%
                                 try{
-                                    List User_list = Factory.getUserInstance().showDetailUser("teacher","idf");
+                                    List User_list = Factory.getUserInstance().showDetailUser("all","all");
                                     Iterator iter = User_list.iterator();
                                     while(iter.hasNext()){
                                         User newUser = (User) iter.next();
@@ -182,7 +196,7 @@
                                         out.print("<tr><td  style='text-align: center'  width='15%'><div id='name"+id+"'><a href='user-info.jsp?id="+newUser.getId()+"&name="+newUser.getName()+"'>"+ newUser.getName()+"</a></div></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='department"+id+"'><a href='department-info.jsp?id="+newUser.getDepartment_id()+"&name="+newUser.getDepartment()+"'>"+newUser.getDepartment()+"</a></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='sex"+id+"'>"+ newUser.getSex()+"</td>");
-                                        out.print("<td  style='text-align: center' width='15%'><div id='career"+id+"'><a href='career-info.jsp?id="+newUser.getCareer_id()+"&name="+newUser.getName()+"'>"+newUser.getName()+"</a></td>");
+                                        out.print("<td  style='text-align: center' width='15%'><div id='career"+id+"'><a href='career-info.jsp?id="+newUser.getCareer_id()+"&name="+newUser.getCareer()+"'>"+newUser.getCareer()+"</a></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='position"+id+"'><a href='positional-info.jsp?id="+newUser.getPosition_id()+"&name="+newUser.getPosition()+"'>"+newUser.getPosition()+"</a></td>");
                                         out.print("<td  style='text-align: center' width='15%'><div id='level"+id+"'>"+ newUser.getLevel()+"</td>");
                                         out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
@@ -201,6 +215,70 @@
             </div>
         </div>
         <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                        <h5>新增员工</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                            <div class="table-head">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <td width="10%">员工名字：<input type="text" id="user_name"> </td>
+                                        <td width="10%">员工部门：<select id='user_department'>
+                                            <%
+                                                try {
+                                                    List Department_list = Factory.getDepartmentInstance().showDepartment();
+                                                    Iterator Department_iter = Department_list.iterator();
+                                                    while (Department_iter.hasNext()){
+                                                        Department newDepartment = (Department) Department_iter.next();
+                                                        out.print("<option value='"+newDepartment.getId()+"'>"+newDepartment.getName()+"</option>");
+                                                    }
+                                                }catch(Exception e){
+                                                    e.printStackTrace();
+                                                }
+                                            %></select>
+                                        </td>
+                                        <td width="10%">员工职务：<select id='user_career'>
+                                            <%
+                                                try {
+                                                    List Career_list = Factory.getCareerInstance().showCareer();
+                                                    Iterator Career_iter = Career_list.iterator();
+                                                    while (Career_iter.hasNext()){
+                                                        Career newCareer = (Career) Career_iter.next();
+                                                        out.print("<option value='"+newCareer.getId()+"'>"+newCareer.getName()+"</option>");
+                                                    }
+                                                }catch(Exception e){
+                                                    e.printStackTrace();
+                                                }
+                                            %></select>
+                                        </td>
+                                        <td width="10%">员工职称：<select id='user_position'>
+                                        <%
+                                                try {
+                                                    List Position_list = Factory.getPositionInstance().showPosition();
+                                                    Iterator Position_iter = Position_list.iterator();
+                                                    while (Position_iter.hasNext()){
+                                                        Position newPosition = (Position) Position_iter.next();
+                                                        out.print("<option value='"+newPosition.getId()+"'>"+newPosition.getName()+"</option>");
+                                                    }
+                                                }catch(Exception e){
+                                                    e.printStackTrace();
+                                                }
+                                            %></select>
+                                        </td>
+                                        <td width="10%">员工等级: <select id="user_level"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></td>
+                                        <td width="10%">员工性别: <select id="user_sex"><option value="男">男</option><option value="女">女</option></select></td>
+                                        <td width="35%">员工信息：<input type="text" id="user_information" style="width:90%"> </td>
+                                        <td width="5%"><button value="提交" class="btn btn-success" onclick="submitUser()">提交</button></td>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div></div>
 <!--Footer-part-->

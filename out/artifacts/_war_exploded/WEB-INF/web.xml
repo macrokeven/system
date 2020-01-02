@@ -75,6 +75,24 @@
         <url-pattern>/Register</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>addNew</servlet-name>
+        <servlet-class>com.letoy.servlet.addNew</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addNew</servlet-name>
+        <url-pattern>/addNew</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.letoy.servlet.delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
 
 
     <!-- servlet definition -->

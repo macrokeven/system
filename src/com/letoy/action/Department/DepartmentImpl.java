@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DepartmentImpl implements DepartmentApi {
-
     private Connection con;
     private PreparedStatement pstm;
     public DepartmentImpl(Connection conn) {
@@ -59,6 +58,7 @@ public class DepartmentImpl implements DepartmentApi {
         return flag;
     }
 
+    @Override
     public List showDetailDepartment() {
         List<Department> list = null;
         try {
@@ -81,8 +81,22 @@ public class DepartmentImpl implements DepartmentApi {
         return list;
     }
 
+    @Override
+    public boolean addDepartment(Department newDepartment) {
+        boolean flag = false;
+        String sql = "insert into department(name,people_number,level) values (?,0,?)";
+        try {
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,newDepartment.getName());
+            pstm.setString(2,newDepartment.getLevel());
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return flag;
 
-
-
-
+    }
 }

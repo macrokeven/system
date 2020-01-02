@@ -11,6 +11,9 @@
     String user_id = (String) session.getAttribute("user_id");
     String user_idf = (String) session.getAttribute("user_idf");
     String user_level = (String) session.getAttribute("user_level");
+    if(session.getAttribute("user_id")==null){
+        out.println("<script>alert('请登录!');location.href='index.jsp'</script>");
+    }
 %>
 <div id="header">
     <h1><a href="dashboard.jsp">MatAdmin</a></h1>

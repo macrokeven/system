@@ -80,4 +80,23 @@ public class PositionImpl implements PositionApi {
         }
         return list;
     }
+
+    @Override
+    public boolean addPosition(Position newPosition) {
+        boolean flag = false;
+        String sql = "insert into position (name,people_number,level) values (?,0,?)";
+        try {
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1,newPosition.getName());
+            pstm.setString(2,newPosition.getLevel());
+            if(pstm.executeLargeUpdate()==1){
+                flag = true;
+            }
+            con.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return flag;
+
+    }
 }

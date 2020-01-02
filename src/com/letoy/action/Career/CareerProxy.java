@@ -36,4 +36,9 @@ public class CareerProxy implements CareerApi{
     public List showCareer() {
         return this.dao.showCareer();
     }
+
+    @Override
+    public boolean addCareer(Career newCareer) {
+        return this.dao.addCareer(newCareer);
+    }
 }

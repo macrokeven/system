@@ -48,4 +48,9 @@ public class UserProxy implements UserApi {
     public boolean addUser(LogUser newLogUser) {
         return this.dao.addUser(newLogUser);
     }
+
+    @Override
+    public boolean addSystemUser(User newUser) {
+        return this.dao.addSystemUser(newUser);
+    }
 }

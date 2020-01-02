@@ -24,19 +24,16 @@ public class DepartmentProxy implements DepartmentApi{
 
     @Override
     public boolean changeDepartment(Department newDepartment) {
-        boolean flag = false;
-        try{
-            if(this.dao.changeDepartment(newDepartment)){
-                flag= true;
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return flag;
+        return this.dao.changeDepartment(newDepartment);
     }
 
     @Override
     public List showDetailDepartment() {
         return this.dao.showDetailDepartment();
+    }
+
+    @Override
+    public boolean addDepartment(Department newDepartment) {
+        return this.dao.addDepartment(newDepartment);
     }
 }

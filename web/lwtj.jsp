@@ -51,8 +51,7 @@
         </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-
-
+                <li><a href="xm/xmsp.jsp">项目审批</a></li>
             </ul>
         </li>
         <li class="active"> <a href="lwtj.jsp"><i class="icon icon-signal"></i><span>系统统计</span></a></li>

@@ -7,5 +7,6 @@ import java.util.List;
 
 public interface CareerApi {
     boolean changeCareer(Career newCareer);
+    boolean addCareer(Career newCareer);
     List showCareer();
 }

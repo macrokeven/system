@@ -26,19 +26,16 @@ public class PositionProxy implements PositionApi {
 
     @Override
     public boolean changePosition(Position newPosition) {
-        boolean flag = false;
-        try{
-            if(this.dao.changePosition(newPosition)){
-                flag= true;
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return flag;
+        return this.dao.changePosition(newPosition);
     }
 
     @Override
     public List showDetailPosition() {
         return this.dao.showDetailPosition();
+    }
+
+    @Override
+    public boolean addPosition(Position newPosition) {
+        return this.dao.addPosition(newPosition);
     }
 }

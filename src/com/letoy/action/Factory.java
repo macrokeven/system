@@ -5,6 +5,7 @@ import com.letoy.action.Department.DepartmentProxy;
 import com.letoy.action.LogUser.LogUserProxy;
 import com.letoy.action.Position.PositionProxy;
 import com.letoy.action.Project.ProjectProxy;
+import com.letoy.action.Public.PublicProxy;
 import com.letoy.action.User.UserProxy;
 
 public class Factory {
@@ -26,4 +27,5 @@ public class Factory {
     public static PositionProxy getPositionInstance(){
         return new PositionProxy();
     }
+    public static PublicProxy getPublicInstance(){return new PublicProxy();}
 }

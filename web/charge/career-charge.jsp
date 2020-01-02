@@ -142,6 +142,28 @@
             </div>
         </div>
         <div class="row-fluid">
+            <div class="span5">
+                <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                        <h5>新增职务</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form action="../addNew?action=career" method="post">
+                            <div class="table-head">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <td width="45%">职务名称：<input type="text" name="name"> </td>
+                                        <td width="45%">职务等级: <select name="level"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option> </select></td>
+                                        <td width="10%"><input type="submit" value="提交" class="btn btn-success"></td>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div></div>
 <!--Footer-part-->
