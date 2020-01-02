@@ -70,7 +70,6 @@ public class UserImpl implements UserApi {
 
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setString(1, id);
-            System.out.println(pstm);
             ResultSet rs = pstm.executeQuery();
             list = new ArrayList<User>();
             while (rs.next()) {

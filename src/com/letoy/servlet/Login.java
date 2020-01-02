@@ -34,7 +34,6 @@ public class Login extends HttpServlet {
                 if("login".equals(lgUser.getLogin_status())){
                     try {
                         List user = Factory.getUserInstance().showDetailUser(lgUser.getIdf_id(),"one");
-                        System.out.println(lgUser.getIdf_id());
                         Iterator iter = user.iterator();
                         while(iter.hasNext()) {
                             newUser = (User) iter.next();
@@ -43,7 +42,6 @@ public class Login extends HttpServlet {
                             session.setAttribute("user_name",newUser.getName());
                             session.setAttribute("user_level",newUser.getLevel());
                             session.setAttribute("status", "login");
-                            System.out.println(newUser.getName());
                         }
                     }catch (Exception e){
                         e.printStackTrace();

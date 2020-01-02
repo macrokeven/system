@@ -32,6 +32,7 @@ public class ProjectImpl implements ProjectApi {
                 newProject.setCharger_id(rs.getString("charger_id"));
                 newProject.setStatus(rs.getString("status"));
                 newProject.setCharger_name(rs.getString("charger_name"));
+                newProject.setInformation(rs.getString("information"));
                 list.add(newProject);
             }
         }catch (SQLException e){
@@ -48,7 +49,6 @@ public class ProjectImpl implements ProjectApi {
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setString(1,action);
             pstm.setString(2,id);
-            System.out.println(pstm);
             if(pstm.executeLargeUpdate()==1){
                 flag = true;
             }
@@ -57,5 +57,31 @@ public class ProjectImpl implements ProjectApi {
             e.printStackTrace();
         }
         return flag;
+    }
+
+    @Override
+    public List showDetailProject(String id,String type) {
+        List<Project> list = null;
+        try {
+            String sql = null;
+            sql = "select * from project where `id` = ?;";
+            PreparedStatement pstm = con.prepareStatement(sql);
+            pstm.setString(1, id);
+            ResultSet rs = pstm.executeQuery();
+            list = new ArrayList<Project>();
+            while (rs.next()) {
+                Project newProject = new Project();
+                newProject.setId(rs.getString("id"));
+                newProject.setName(rs.getString("name"));
+                newProject.setCharger_name(rs.getString("charger_name"));
+                newProject.setInformation(rs.getString("information"));
+                newProject.setStatus(rs.getString("status"));
+                newProject.setCharger_id(rs.getString("charger_id"));
+                list.add(newProject);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
     }
 }

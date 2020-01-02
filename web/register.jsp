@@ -52,7 +52,7 @@
         </div>
 
         <div class="form-actions">
-            <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">返回</a></span>
+            <span class="pull-left"><a href="index.jsp" class="flip-link btn btn-info" id="to-recover" >返回</a></span>
             <span class="pull-right"><a type="submit" href="#" class="btn btn-success" onclick="submit()" > 注册</a></span>
         </div>
     </form>

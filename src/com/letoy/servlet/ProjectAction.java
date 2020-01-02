@@ -23,10 +23,10 @@ public class ProjectAction extends HttpServlet {
         String status = request.getParameter("action");
         try{
             if(Factory.getProjectInstance().actionProject(status,id)){
-                if("status".equals("pass")||"status".equals("fail")) {
+                if(status.equals("pass")||status.equals("fail")) {
                     response.sendRedirect("xm/xmsp.jsp");
                 }
-                if("status".equals("finish")){
+                if(status.equals("finish")){
                     response.sendRedirect("xm/xmys.jsp");
                 }
             }

@@ -1,26 +1,41 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/12/13
-  Time: 16:16
+  Project: k.macro
+  Date: 2019/12/11
+  Time: 上午9:28
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="../path.jsp" %>
+<%@ include file="../path.jsp"%>
 <%@ page import="static com.letoy.path.pathConf.getCss" %>
 <%@ page import="static com.letoy.path.pathConf.getJs" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.letoy.action.Factory" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="com.letoy.module.Project" %>
-<%@ page import="com.letoy.module.Position" %>
+<%
+    String position_id = request.getParameter("id");
+    String name = request.getParameter("name");
+    Project newProject = null;
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>通用表单页面</title>
+    <title>部门管理</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%=getCss(1)%>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .table-head{padding-right:17px;background-color:#f2f2f2;color:#000;}
+        .table-body{width:100%; height:350px;overflow-y:scroll;}
+
+        .table-body table{width:100%;border-collapse: collapse;}
+        .table-body table tr:nth-child(2n+1){background-color:#f2f2f2;}
+    </style>
     <script>
         var status="ok";
         function edit(a){
@@ -38,20 +53,19 @@
 
         }
         function refresh(){
-            location.href="positional-charge.jsp"
+            location.href="department-charge.jsp"
         }
         function submit(id){
             var name = document.getElementById("name").value;
             var level = document.getElementById("level").value;
             var people = document.getElementById("people").value;
-            var path = "../Edit?action=position&id="+id+"&name="+name+"&level="+level+"&people="+people;
+            var path = "../Edit?action=department&id="+id+"&name="+name+"&level="+level+"&people="+people;
             location.href=path;
         }
     </script>
 </head>
-<%@ include file="../bar.jsp"%>
+<body><%@ include file="../bar.jsp"%>
 
-<!--start-top-serch-->
 <div id="search">
     <input type="text" placeholder="请输入搜索内容..."/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
@@ -60,17 +74,17 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> 控制台</a>
     <ul>
         <li><a href="../main.jsp"><i class="icon icon-home"></i> <span>首页</span></a> </li>
-        <li class="submenu open" > <a href="#"><i class="icon icon-th-list"></i> <span>人事管理</span> </a>
+        <li class="submenu" > <a href="#"><i class="icon icon-th-list"></i> <span>人事管理</span> </a>
             <ul>
                 <li><a href="<%=bmgl%>">部门管理</a></li>
                 <li><a href="<%=zwgl%>">职务管理</a></li>
-                <li  class="active"><a href="<%=zcgl%>">职称管理</a></li>
+                <li><a href="<%=zcgl%>">职称管理</a></li>
                 <li><a href="<%=jsxx%>">员工信息管理</a></li>
             </ul>
         </li>
-        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
+        <li class="submenu open"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
-                <li><a href="<%=xmsp%>">项目审批</a></li>
+                <li class="active"><a href="<%=xmsp%>">项目审批</a></li>
 
             </ul>
         </li>
@@ -79,11 +93,10 @@
     </ul>
 </div>
 
-
 <div id="content">
     <div id="content-header">
-        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">管理</a> <a href="#" class="current">职务管理</a></div>
-        <h1>部门管理</h1>
+        <div id="breadcrumb"><a href="../index.jsp" class="tip-bottom"><em class="icon-home"></em> 首页</a> <a href="#" class="tip-bottom">项目管理</a> <a href="../xm/xmsp.jsp">项目审批</a> <a href="#" class="current" class="current">查看项目信息</a> </div>
+        <h1>项目： <%=name%></h1>
     </div>
     <div class="container-fluid">
         <hr>
@@ -91,47 +104,38 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                        <h5>查看职务信息</h5>
+                        <h5>查看项目 <%=name%> 信息</h5>
                     </div>
 
                     <div class="widget-content nopadding">
-                        <div class="table-head">
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th width="30%">职务名称</th>
-                                    <th width="30%">职务人数</th>
-                                    <th width="30%">职务等级</th>
-                                    <th width="10%">操作</th>
-                                </tr>
-                                </thead>
-                            </table>
-                        </div>
-                        <div class="table-body">
-                            <table class="table table-bordered table-striped">
-                                <colgroup><col style="width: 80px;" /><col /></colgroup>
-                                <div style="border: 1px  #000000; width: 100%; margin: 0 auto;">
+
                                         <%
                                 try{
-                                    List Position_list = Factory.getPositionInstance().showPosition();
-                                    Iterator iter = Position_list.iterator();
+                                    List Career_list = Factory.getProjectInstance().showDetailProject(position_id,"one");
+                                    Iterator iter = Career_list.iterator();
                                     while(iter.hasNext()){
-                                        Position newPosition = (Position) iter.next();
-                                        String id =newPosition.getId();
-                                        out.print("<tr><td  style='text-align: center'  width='30%'><div id='name"+id+"'><a href='positional-info.jsp?id="+id+"&name="+newPosition.getName()+"'>"+ newPosition.getName()+"</a></div></td>");
-                                        out.print("<td  style='text-align: center' width='30%'><div id='people"+id+"'>"+ newPosition.getPeople_number()+"</td>");
-                                        out.print("<td  style='text-align: center' width='30%'><div id='level"+id+"'>"+ newPosition.getLevel()+"</td>");
-                                        out.print("<td  width='5%'><div id='edit"+id+"'><a class='tip' onclick='edit("+id+")' >" +
-                                                "<i class='icon-pencil'></i>编辑</a></div></td>" +
-                                                "<td  width='5%'><div id='delete"+id+"'><a class='tip' href='../delete?action=Position&id="+id+" >" +
-                                                "<i class='icon-remove'></i>删除</a></div></td></tr>");
+                                        newProject = (Project) iter.next();
+                                        String id =newProject.getId();
+                                        out.println("<table border='1' width='100%'>\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h2 style='color:black'>项目姓名："+newProject.getName()+"</h2></td>\n" +
+                                                "                                    <td rowspan='4'><h5>项目简介：</h5><br><h5>"+newProject.getInformation()+"</h5></td>\n" +
+                                                "                                </tr>\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h3 >项目负责人：<a href='user-info.jsp?id="+newProject.getCharger_id()+"'>"+newProject.getCharger_name()+"</a></h3></td>\n" +
+                                                "                                </tr>\n" +
+                                                "\n" +
+                                                "                                <tr>\n" +
+                                                "                                    <td><h3 >项目状态："+newProject.getStatus()+"</h3></td>\n" +
+                                                "                                </tr>\n" +
+                                                "                            </table>");
+                                        
                                     }
                                 }catch (Exception e){
                                     e.printStackTrace();
                                 }
                             %>
-                            </table>
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -71,11 +71,11 @@
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> </a>
             <ul>
                 <li><a href="<%=xmsp%>">项目审批</a></li>
-                <li><a href="<%=xmys%>">项目验收</a></li>
+
             </ul>
         </li>
-        <li> <a href="../lwtj.jsp"><i class="icon icon-signal"></i> <span>论文统计</span></a> </li>
-        <li> <a href="../xm/xshd.jsp"><i class="icon icon-inbox"></i> <span>学术活动</span></a> </li>
+        <li> <a href="../lwtj.jsp"><i class="icon icon-signal"></i> <span>项目统计</span></a> </li>
+
     </ul>
 </div>
 

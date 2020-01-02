@@ -6,15 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-    <%
-        String user_name = (String) session.getAttribute("user_name");
-        String user_id = (String) session.getAttribute("user_id");
-        String user_idf = (String) session.getAttribute("user_idf");
-        String user_level = (String) session.getAttribute("user_level");
-    %>
-    <div id="header">
-        <h1><a href="dashboard.jsp">MatAdmin</a></h1>
-    </div>
+<%
+    String user_name = (String) session.getAttribute("user_name");
+    String user_id = (String) session.getAttribute("user_id");
+    String user_idf = (String) session.getAttribute("user_idf");
+    String user_level = (String) session.getAttribute("user_level");
+%>
+<div id="header">
+    <h1><a href="dashboard.jsp">MatAdmin</a></h1>
+</div>
 <div id="user-nav" class="navbar navbar-inverse">
     <ul class="nav">
         <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎,${sessionScope.user_name}</span><b class="caret"></b></a>

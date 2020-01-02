@@ -56,8 +56,8 @@
                 <li class="active"><a href="<%=xmys%>">项目验收</a></li>
             </ul>
         </li>
-        <li> <a href="../lwtj.jsp"><i class="icon icon-signal"></i> <span>论文统计</span></a> </li>
-        <li> <a href="../xm/xshd.jsp"><i class="icon icon-inbox"></i> <span>学术活动</span></a> </li>
+        <li> <a href="../lwtj.jsp"><i class="icon icon-signal"></i> <span>项目统计</span></a> </li>
+
     </ul>
 </div>
 

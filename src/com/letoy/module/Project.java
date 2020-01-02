@@ -6,6 +6,8 @@ public class Project {
     private String status;
     private String charger_id;
     private String charger_name;
+    private String information;
+
 
     public String getId() {
         return id;
@@ -45,5 +47,13 @@ public class Project {
 
     public void setCharger_name(String charger_name) {
         this.charger_name = charger_name;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
     }
 }

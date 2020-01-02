@@ -26,4 +26,9 @@ public class ProjectProxy implements ProjectApi {
     public boolean actionProject(String action,String id) {
         return this.dao.actionProject(action,id);
     }
+
+    @Override
+    public List showDetailProject(String id, String type) {
+        return this.dao.showDetailProject(id,type);
+    }
 }
